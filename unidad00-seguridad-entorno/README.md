@@ -1,41 +1,148 @@
 # Unidad 00 — Seguridad, materiales y entorno
 
-## Objetivo
-Preparar un espacio de trabajo seguro e instalar Arduino IDE.
+## Qué aprenderás
+Preparar un banco de trabajo, reconocer riesgos de baja tensión, instalar Arduino IDE y distinguir fallos de software, USB y circuito.
 
-## Material básico
-- placa Arduino Uno o compatible;
-- cable USB adecuado;
+# 1. Principio del curso
+
+```text
+comprender → revisar → energizar → medir → programar → integrar
+```
+
+Nunca uses “conectar hasta que funcione” como método de diagnóstico.
+
+# 2. Material inicial
+
+- Arduino Uno o compatible;
+- cable USB **de datos**;
 - protoboard;
 - jumpers;
 - LED;
-- resistencias de 220 Ω a 330 Ω;
+- resistencias 220–330 Ω;
 - pulsadores;
-- potenciómetro de aproximadamente 10 kΩ;
+- potenciómetro cercano a 10 kΩ;
 - multímetro recomendado.
 
-## Seguridad
-- Trabaja con baja tensión.
-- Desconecta la alimentación antes de modificar conexiones.
-- Verifica polaridad de LED y componentes polarizados.
-- Nunca unas directamente 5 V con GND.
-- No conectes motores directamente a pines.
-- No conectes Arduino directamente a la red eléctrica.
-- Si un componente se calienta inesperadamente, desconecta.
+Antes de usar un módulo nuevo, busca su documentación/pinout.
 
-## Arduino IDE
-1. Instala Arduino IDE.
-2. Conecta la placa.
-3. Selecciona la placa correcta.
-4. Selecciona el puerto.
-5. Abre un ejemplo básico.
-6. Compila antes de subir.
+# 3. Baja tensión no significa riesgo cero
 
-## Diagnóstico inicial
-Si no puedes cargar un programa, comprueba cable, puerto, placa seleccionada y si otra aplicación está usando el puerto.
+Un cortocircuito puede:
+- calentar conductores/componentes;
+- dañar reguladores o USB;
+- destruir un GPIO;
+- deteriorar una batería/fuente.
 
-## Reto
-Documenta tu kit: fotografía o lista de componentes, identificación y función aproximada.
+Este curso no trabaja directamente con red eléctrica doméstica.
 
-## Qué sigue
-Unidad 01 — Electricidad y electrónica básica.
+# 4. Regla de energía
+
+Antes de cambiar conexiones:
+1. desconecta alimentación;
+2. modifica;
+3. inspecciona;
+4. energiza.
+
+Si algo se calienta, huele extraño o se comporta de forma inesperada, desconecta inmediatamente.
+
+# 5. GPIO no es fuente de potencia
+
+Un pin está diseñado principalmente para señales/cargas pequeñas dentro de las especificaciones del microcontrolador.
+
+No conectes directamente:
+- motores;
+- relés sin etapa apropiada;
+- tiras LED;
+- cargas de corriente desconocida.
+
+Los límites exactos dependen de placa/microcontrolador. Consulta documentación/datasheet; no diseñes al límite absoluto.
+
+# 6. Protoboard
+
+No todas tienen rieles continuos de extremo a extremo.
+
+Usa continuidad del multímetro con el circuito **sin alimentación** para conocer conexiones internas.
+
+# 7. Multímetro
+
+Antes de medir pregunta:
+> ¿quiero voltaje, resistencia/continuidad o corriente?
+
+Voltaje se mide normalmente en paralelo.
+
+Corriente exige insertar el instrumento en el camino y usar borne/rango correctos; una conexión incorrecta puede crear un cortocircuito.
+
+Si todavía no sabes medir corriente con seguridad, no improvises: comienza con voltaje/continuidad.
+
+# 8. Arduino IDE
+
+1. instala Arduino IDE;
+2. conecta la placa;
+3. selecciona modelo;
+4. selecciona puerto;
+5. abre un ejemplo;
+6. verifica/compila;
+7. carga.
+
+# 9. Cable USB
+
+Algunos cables solo cargan.
+
+Si la placa recibe energía pero no aparece como puerto, prueba primero un cable de datos conocido antes de modificar drivers/circuito.
+
+# 10. Tres capas de diagnóstico
+
+**Código:** ¿compila?  
+**Comunicación:** ¿placa/puerto/cable permiten cargar?  
+**Hardware:** ¿el circuito está conectado correctamente?
+
+No cambies resistencias para resolver un error de sintaxis.
+
+# 11. Primera comprobación
+
+Con la placa sola:
+- identifica LED de alimentación;
+- identifica LED integrado;
+- compila/carga Blink;
+- confirma que puedes recuperar la placa a un estado conocido.
+
+# 12. Checklist obligatorio
+
+Antes de energizar una práctica usa [CHECKLIST.md](CHECKLIST.md).
+
+# 13. Práctica guiada
+
+Documenta tu kit:
+- componente;
+- cantidad;
+- tensión nominal si aplica;
+- función;
+- pinout/fuente de documentación.
+
+# 14. Errores frecuentes
+- cable solo carga;
+- cambiar circuito energizado;
+- motor en GPIO;
+- medir corriente como voltaje;
+- asumir rieles de protoboard;
+- diseñar con límites máximos sin margen.
+
+# 15. Reto
+Prepara tu banco y explica qué harías ante: placa no detectada, LED que se calienta y motor que quieres controlar.
+
+# 16. Autoevaluación
+1. ¿Baja tensión = imposible dañar?
+2. ¿GPIO es fuente de potencia?
+3. ¿Cómo comprobar riel?
+4. ¿Voltaje se mide cómo?
+5. ¿Placa energizada pero sin puerto?
+6. ¿Qué tres capas diagnosticar?
+
+# 17. Checklist de dominio
+- [ ] Trabajo desenergizado al cablear.
+- [ ] Identifico alimentación/GND.
+- [ ] Sé usar continuidad/voltaje.
+- [ ] Distingo compilación/carga/hardware.
+- [ ] Consulto especificaciones.
+
+Continúa con electrónica básica.
