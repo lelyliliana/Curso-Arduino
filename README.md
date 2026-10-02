@@ -1,5 +1,7 @@
 # Curso de Arduino desde cero
 
+**Versión 1.0**
+
 Curso abierto para aprender **electrónica, programación y prototipado con Arduino** mediante prácticas progresivas y proyectos.
 
 La ruta comienza con seguridad, electricidad básica y preparación del entorno, y avanza hacia entradas y salidas digitales y analógicas, sensores, actuadores, comunicación, organización del código y proyectos integradores.
@@ -99,7 +101,7 @@ Arduino forma parte del área de **IoT y Robótica** de Aprende con Leli y se co
 
 ## Estado
 
-Curso disponible con 24 unidades organizadas en siete niveles.
+Curso completo con 24 unidades organizadas en siete niveles, prácticas, sketches, ejercicios, diagnóstico de hardware, plantillas de diseño y proyecto final con rúbrica técnica.
 
 ## Autora
 
