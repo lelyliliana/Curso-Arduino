@@ -99,7 +99,7 @@ Arduino será la puerta de entrada práctica a futuras rutas de electrónica, Io
 
 ## Estado
 
-Primera versión en construcción.
+Primera versión completa disponible. Se continuará ampliando con diagramas, fotografías, variantes de hardware y proyectos adicionales.
 
 ## Autora
 
