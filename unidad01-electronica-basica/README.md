@@ -1,51 +1,161 @@
 # Unidad 01 — Electricidad y electrónica básica
 
-## Objetivo
-Comprender los conceptos mínimos necesarios para conectar componentes de forma razonada.
+## Qué aprenderás
+Razonar sobre voltaje, corriente, resistencia y potencia antes de conectar componentes.
 
-## Voltaje
-Diferencia de potencial eléctrico. Se mide en voltios (V).
+# 1. Circuito
 
-## Corriente
-Flujo de carga. Se mide en amperios (A).
+Para que circule corriente debe existir un camino cerrado y una diferencia de potencial.
 
-## Resistencia
-Oposición al paso de corriente. Se mide en ohmios (Ω).
+Un circuito abierto interrumpe el camino.
 
-## Ley de Ohm
+Un cortocircuito crea un camino de resistencia muy baja donde no debería existir, pudiendo producir corriente peligrosa para los componentes/fuente.
+
+# 2. Voltaje
+
+Diferencia de potencial eléctrico entre dos puntos.
+
+Se mide en voltios (V).
+
+No digas simplemente que “un punto tiene voltaje” sin referencia; la medición compara puntos.
+
+# 3. Corriente
+
+Flujo de carga.
+
+Se mide en amperios (A), frecuentemente mA en nuestros circuitos.
+
+La carga **demanda** corriente según el circuito; una fuente debe poder suministrarla dentro de sus especificaciones.
+
+# 4. Resistencia
+
+Oposición al paso de corriente.
+
+Se mide en ohmios (Ω).
+
+Las resistencias también tienen tolerancia y potencia nominal.
+
+# 5. Ley de Ohm
+
 ```text
 V = I × R
 I = V / R
 R = V / I
 ```
 
-## Potencia
+Aplica al elemento/modelo resistivo bajo las condiciones correspondientes; no todos los componentes se comportan como una resistencia lineal.
+
+# 6. LED + resistencia
+
+Modelo aproximado educativo:
+
+```text
+5 V ─ resistencia ─ LED ─ GND
+```
+
+Si el LED cae aproximadamente 2 V, quedan cerca de 3 V sobre la resistencia.
+
+Con 330 Ω:
+
+```text
+I ≈ 3 V / 330 Ω
+I ≈ 0.0091 A
+I ≈ 9.1 mA
+```
+
+Es una aproximación. La caída real depende del LED/corriente/temperatura.
+
+# 7. Por qué no LED directo
+
+Sin una limitación adecuada, la corriente puede superar valores seguros para LED o pin.
+
+La resistencia limita corriente; no está “para bajar brillo” únicamente.
+
+# 8. Potencia
+
 ```text
 P = V × I
 ```
 
-## LED
-Tiene polaridad y necesita limitación de corriente.
+Para una resistencia también puedes derivar relaciones como `P=I²R` o `P=V²/R` cuando aplica.
 
-Con una fuente lógica de 5 V y un LED con caída aproximada de 2 V, una resistencia limita la corriente. En prácticas educativas suelen usarse 220–330 Ω según el circuito.
+Comprueba que el componente tenga margen de potencia.
 
-## Protoboard
-Antes de conectar, identifica qué orificios están eléctricamente unidos. No asumas que todas las protoboards distribuyen sus rieles exactamente igual.
+# 9. Serie
 
-## Serie y paralelo
-Introduce cómo cambia la conexión eléctrica cuando los componentes comparten camino o nodos.
+En un camino en serie circula la misma corriente por los elementos.
 
-## Multímetro
-Aprende a medir voltaje y continuidad. Para corriente, la conexión es diferente y requiere especial cuidado.
+Las caídas de tensión se distribuyen según el circuito.
 
-## Ejercicios
-1. Calcula corriente aproximada para varios valores de resistencia.
-2. Identifica conexiones internas de tu protoboard.
-3. Explica qué ocurre en un cortocircuito.
-4. Distingue voltaje, corriente, resistencia y potencia.
+# 10. Paralelo
 
-## Reto
-Diseña en papel un circuito LED con resistencia e identifica el recorrido de corriente antes de montarlo.
+Ramas comparten nodos/tensión entre sus extremos.
 
-## Qué sigue
-Unidad 02 — Conoce Arduino y tu primer programa.
+Las corrientes de ramas contribuyen a la corriente total.
+
+No extrapoles reglas de serie a paralelo.
+
+# 11. Protoboard
+
+Antes de energizar:
+- identifica filas conectadas;
+- identifica rieles;
+- comprueba si están partidos;
+- usa continuidad si tienes dudas.
+
+# 12. Multímetro
+
+**Voltaje:** normalmente en paralelo y circuito energizado.  
+**Resistencia/continuidad:** circuito desenergizado.  
+**Corriente:** instrumento en serie, borne/rango correcto.
+
+Nunca midas resistencia de un circuito energizado.
+
+# 13. Tierra/GND
+
+GND es una referencia eléctrica del circuito, no necesariamente “la Tierra física”.
+
+Cuando dos sistemas intercambian señales suelen necesitar referencia común, salvo diseños con aislamiento.
+
+# 14. Práctica guiada
+
+Calcula corriente LED para 220 Ω, 330 Ω y 1 kΩ usando una caída aproximada dada.
+
+Después mide:
+- resistencia;
+- tensión de alimentación;
+- caída sobre LED/resistencia.
+
+Compara modelo y realidad.
+
+# 15. Ejercicios
+
+Continúa con [ejercicios/README.md](ejercicios/README.md).
+
+# 16. Errores frecuentes
+- medir voltaje en serie;
+- continuidad con energía;
+- LED sin resistencia;
+- tratar todo componente con V=IR directamente;
+- confundir GND con ausencia absoluta de voltaje;
+- ignorar potencia/tolerancia.
+
+# 17. Reto
+Diseña en papel un circuito LED, calcula corriente/potencia y justifica la resistencia antes de montarlo.
+
+# 18. Autoevaluación
+1. ¿Voltaje se mide entre qué?
+2. ¿Qué necesita corriente para circular?
+3. ¿Por qué resistencia con LED?
+4. ¿Qué cambia serie/paralelo?
+5. ¿Cuándo medir continuidad?
+6. ¿GND siempre es tierra física?
+
+# 19. Checklist
+- [ ] Aplico Ohm.
+- [ ] Calculo potencia básica.
+- [ ] Distingo serie/paralelo.
+- [ ] Uso multímetro con criterio.
+- [ ] Reviso antes de energizar.
+
+Continúa con la placa y primer sketch.
