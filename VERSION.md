@@ -1,6 +1,6 @@
 # Versión 1.0
 
-Estado: **completa y disponible**.
+Estado: **completa, autodidacta y disponible**.
 
 ## Alcance
 
@@ -32,3 +32,7 @@ La versión 1.0 contiene:
 El curso cubre el recorrido formativo definido desde seguridad y fundamentos electrónicos hasta integración de prototipos.
 
 Las correcciones o ajustes posteriores se consideran mantenimiento de la versión publicada, no contenido pendiente para completar el curso.
+
+## Experiencia de aprendizaje
+
+El curso puede recorrerse de forma autónoma desde seguridad y fundamentos eléctricos hasta sensores, actuadores, comunicaciones, alimentación e integración de prototipos. Las unidades combinan explicación, cálculo, conexión segura, programación, medición, diagnóstico, retos y proyectos reproducibles.
