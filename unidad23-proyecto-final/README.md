@@ -1,49 +1,240 @@
-# Unidad 23 — Proyecto final libre
+# Unidad 23 — Proyecto final: sistema embebido reproducible
 
 ## Propósito
-Diseñar y construir un prototipo propio aplicando electrónica, programación, integración y documentación.
+Diseñar, construir, probar y documentar un prototipo propio aplicando electrónica, programación, medición e integración.
 
-## Requisitos mínimos
-- problema u objetivo claro;
-- diagrama de bloques;
-- lista de materiales;
-- especificaciones relevantes;
+El objetivo no es demostrar cuántos módulos puedes conectar, sino que cada decisión eléctrica, lógica y mecánica tenga sentido.
+
+# Etapa 1 — Problema
+
+Define:
+- usuario/contexto;
+- necesidad;
+- entrada;
+- salida;
+- criterio de éxito;
+- qué queda fuera del alcance.
+
+Evita comenzar por “quiero usar un servo”.
+
+# Etapa 2 — Requisitos
+
+Separa:
+- funcionales;
+- eléctricos;
+- temporales;
+- mecánicos;
+- seguridad;
+- interfaz/diagnóstico.
+
+Hazlos verificables.
+
+# Etapa 3 — Arquitectura
+
+Dibuja bloques:
+
+```text
+entradas
+  ↓
+adquisición/validación
+  ↓
+estado/decisión
+  ↓
+salidas
+  ↓
+mundo físico
+```
+
+Añade alimentación y comunicaciones.
+
+# Etapa 4 — Componentes
+
+Para cada elemento registra:
+- referencia;
+- función;
+- tensión;
+- niveles lógicos;
+- consumo/picos;
+- interfaz;
+- datasheet/fuente;
+- razón de elección.
+
+# Etapa 5 — Presupuesto eléctrico
+
+Calcula:
+- reposo;
+- operación;
+- peor caso razonable.
+
+Incluye motores/servos con arranque o stall cuando corresponda.
+
+Dimensiona fuente, driver, reguladores, cables y conectores.
+
+# Etapa 6 — Tabla de pines
+
+Ejemplo de columnas:
+- pin Arduino;
+- dispositivo;
+- dirección;
+- nivel;
+- función;
+- observaciones.
+
+Detecta conflictos de timers/buses antes de montar.
+
+# Etapa 7 — Estado seguro
+
+Define comportamiento:
+- al encender;
+- durante reset;
+- ante sensor inválido;
+- pérdida de comunicación;
+- timeout;
+- alimentación insuficiente;
+- fallo de actuador cuando pueda detectarse.
+
+# Etapa 8 — Prototipos unitarios
+
+Prueba por separado:
+1. cada sensor;
+2. cada actuador;
+3. pantalla;
+4. comunicación;
+5. fuente/driver.
+
+Conserva sketches mínimos de diagnóstico cuando aporten.
+
+# Etapa 9 — Código
+
+Organiza por responsabilidades:
+- lectura;
+- validación;
+- lógica/estado;
+- salida;
+- comunicación;
+- diagnóstico.
+
+Usa millis cuando haya tareas concurrentes.
+
+# Etapa 10 — Integración incremental
+
+Integra un componente por vez y ejecuta pruebas de regresión básicas después de cada cambio.
+
+Si deja de funcionar, sabrás qué incorporación investigar primero.
+
+# Etapa 11 — Medición
+
+No afirmes:
+> la fuente aguanta.
+
+Mide o justifica con especificaciones.
+
+Registra cuando corresponda:
+- tensiones;
+- corriente;
+- temperatura;
+- tiempos;
+- error de sensores;
+- comportamiento bajo carga.
+
+# Etapa 12 — Pruebas
+
+Crea tabla:
+
+```text
+caso | condición | esperado | obtenido | resultado
+```
+
+Incluye:
+- nominal;
+- límites;
+- repetición;
+- arranque/reset;
+- entrada inválida;
+- fallo seguro.
+
+No provoques fallas eléctricas peligrosas.
+
+# Etapa 13 — Diagnóstico
+
+El sistema debe permitir entender:
+- qué leyó;
+- qué decidió;
+- qué estado tiene;
+- qué ordenó;
+- qué error detectó.
+
+Serial/pantalla/LED pueden formar parte del diagnóstico.
+
+# Etapa 14 — Reproducibilidad
+
+Otra persona debe poder reconstruir el prototipo sin preguntarte:
+- qué pin;
+- qué biblioteca;
+- qué versión;
+- qué fuente;
+- qué resistencia;
+- qué orientación.
+
+# Etapa 15 — README
+
+Incluye:
+1. título/objetivo;
+2. foto/diagrama cuando exista;
+3. arquitectura;
+4. BOM;
+5. conexiones;
+6. alimentación;
+7. software/librerías;
+8. funcionamiento;
+9. pruebas;
+10. fallos/correcciones;
+11. limitaciones;
+12. mejoras.
+
+# Etapa 16 — Evidencia
+
+Entrega:
+- código;
+- documentación;
 - esquema o tabla de conexiones;
-- presupuesto básico de alimentación;
-- al menos una entrada;
-- al menos una salida;
-- código modular;
-- temporización no bloqueante cuando haya tareas concurrentes;
-- diagnóstico;
-- pruebas;
-- README reproducible.
+- datasheets/referencias;
+- presupuesto;
+- resultados de pruebas;
+- video/demostración si corresponde.
 
-## Proceso
-1. Define el problema.
-2. Diseña antes de conectar.
-3. Prueba componentes por separado.
-4. Integra incrementalmente.
-5. Registra fallos y cambios.
-6. Prueba escenarios normales y anómalos.
-7. Documenta limitaciones.
+# Ideas
 
-## Ideas
 - estación ambiental;
-- sistema de acceso;
+- sistema de acceso didáctico;
 - robot sencillo;
-- asistente de riego a baja tensión;
+- riego de baja tensión;
 - monitor de distancia;
 - dispositivo interactivo;
 - maqueta automatizada.
 
-## Presentación
-Explica:
-- qué problema resuelve;
-- cómo funciona;
-- por qué elegiste cada componente;
-- qué aprendiste;
-- qué mejorarías.
+# Criterios de calidad
 
-## Cierre
+Un proyecto fuerte:
+- no conecta cargas fuera de especificación;
+- no bloquea sin necesidad;
+- distingue dato inválido;
+- tiene estados seguros;
+- puede diagnosticarse;
+- está documentado;
+- puede reproducirse.
 
-> Un prototipo no es una colección de módulos conectados: es un sistema cuyas decisiones eléctricas, lógicas y mecánicas deben tener sentido juntas.
+# Autoevaluación final
+
+1. ¿Puedo explicar cada cable?
+2. ¿Sé cuánto consume el peor caso?
+3. ¿Sé qué ocurre durante reset?
+4. ¿Qué pasa si falla el sensor?
+5. ¿Mi código separa responsabilidades?
+6. ¿Tengo evidencia de pruebas?
+7. ¿Otra persona puede reconstruirlo?
+8. ¿Puedo defender por qué elegí cada componente?
+
+# Cierre
+
+> Un prototipo no es una colección de módulos conectados: es un sistema cuyas decisiones eléctricas, lógicas, temporales y mecánicas deben funcionar juntas y poder justificarse.
