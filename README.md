@@ -2,7 +2,7 @@
 
 Curso abierto para aprender **electrónica, programación y prototipado con Arduino** mediante prácticas progresivas y proyectos.
 
-La ruta comienza con seguridad, electricidad básica y preparación del entorno. Posteriormente incorpora entradas y salidas digitales y analógicas, sensores, actuadores, comunicación, organización del código y proyectos integradores.
+La ruta comienza con seguridad, electricidad básica y preparación del entorno, y avanza hacia entradas y salidas digitales y analógicas, sensores, actuadores, comunicación, organización del código y proyectos integradores.
 
 ## Objetivo
 
@@ -24,7 +24,7 @@ Al finalizar podrás:
 
 ## Hardware de referencia
 
-Los ejemplos utilizarán principalmente una placa compatible con **Arduino Uno**. Los conceptos podrán adaptarse posteriormente a otras placas.
+Los ejemplos utilizan principalmente una placa compatible con **Arduino Uno**. Muchos de los conceptos son transferibles a otras placas, verificando siempre sus especificaciones.
 
 > Antes de conectar un componente, verifica siempre su voltaje, corriente requerida, polaridad y forma correcta de conexión.
 
@@ -95,11 +95,11 @@ Nunca conectes motores, cargas de potencia o dispositivos de tensión/corriente 
 
 ## Relación con Aprende con Leli
 
-Arduino será la puerta de entrada práctica a futuras rutas de electrónica, IoT, ESP32 y robótica.
+Arduino forma parte del área de **IoT y Robótica** de Aprende con Leli y se conecta con el curso de ESP32 e Internet de las Cosas.
 
 ## Estado
 
-Primera versión completa disponible. Se continuará ampliando con diagramas, fotografías, variantes de hardware y proyectos adicionales.
+Curso disponible con 24 unidades organizadas en siete niveles.
 
 ## Autora
 
