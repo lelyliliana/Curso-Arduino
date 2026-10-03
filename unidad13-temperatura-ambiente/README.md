@@ -1,5 +1,7 @@
 # Unidad 13 — Temperatura, humedad y sensores ambientales
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/arduino/)
+
 ## Qué aprenderás
 Integrar una biblioteca/sensor real verificando protocolo, frecuencia de muestreo, validez y plausibilidad de las mediciones.
 
@@ -151,3 +153,12 @@ Monitor ambiental no bloqueante que marque lecturas inválidas y genere alerta c
 - [ ] Plausibilidad/precisión.
 
 Continúa con buzzer.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 12 — Distancia por ultrasonido y tiempo de vuelo](../unidad12-ultrasonido/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 14 — Buzzer, tono y señales audibles](../unidad14-buzzer/README.md)

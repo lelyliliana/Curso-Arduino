@@ -1,5 +1,7 @@
 # Unidad 14 — Buzzer, tono y señales audibles
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/arduino/)
+
 ## Qué aprenderás
 Distinguir buzzer activo/pasivo, generar patrones audibles sin bloquear y diseñar señales que comuniquen estados.
 
@@ -115,3 +117,12 @@ Sistema de tres estados con patrones inequívocos y temporización no bloqueante
 - [ ] Recursos de timer considerados.
 
 Continúa con servomotores.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 13 — Temperatura, humedad y sensores ambientales](../unidad13-temperatura-ambiente/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 15 — Servomotores: señal, posición y alimentación](../unidad15-servomotores/README.md)

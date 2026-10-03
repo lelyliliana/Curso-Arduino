@@ -1,5 +1,7 @@
 # Unidad 08 — Funciones y organización del código
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/arduino/)
+
 ## Qué aprenderás
 Separar responsabilidades, pasar datos y reducir dependencias ocultas antes de construir sistemas con varios sensores/actuadores.
 
@@ -147,3 +149,12 @@ Reorganiza un semáforo y deja loop como una secuencia comprensible de alto nive
 - [ ] loop legible.
 
 Continúa con tiempo no bloqueante.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 07 — Monitor serie y diagnóstico](../unidad07-monitor-serie/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 09 — millis(), tareas cooperativas y máquinas de estados](../unidad09-tiempo-estados/README.md)

@@ -1,5 +1,7 @@
 # Unidad 01 — Electricidad y electrónica básica
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/arduino/)
+
 ## Qué aprenderás
 Razonar sobre voltaje, corriente, resistencia y potencia antes de conectar componentes.
 
@@ -159,3 +161,12 @@ Diseña en papel un circuito LED, calcula corriente/potencia y justifica la resi
 - [ ] Reviso antes de energizar.
 
 Continúa con la placa y primer sketch.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 00 — Seguridad, materiales y entorno](../unidad00-seguridad-entorno/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 02 — Conoce Arduino y tu primer programa](../unidad02-primer-programa/README.md)

@@ -1,5 +1,7 @@
 # Unidad 21 — Proyecto: sistema de monitoreo
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/arduino/)
+
 ## Propósito
 Construir un sistema que mida una magnitud real, determine la calidad de la lectura, presente información y genere estados sin bloquear.
 
@@ -167,3 +169,12 @@ Transmite los datos al computador u otro dispositivo mediante un protocolo docum
 - [ ] Documentación.
 
 Continúa con automatización.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 20 — Diseño de prototipos y alimentación](../unidad20-diseno-alimentacion/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 22 — Proyecto: sistema automatizado](../unidad22-proyecto-automatizacion/README.md)

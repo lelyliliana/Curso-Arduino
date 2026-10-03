@@ -1,5 +1,7 @@
 # Unidad 19 — I²C y SPI: buses compartidos
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/arduino/)
+
 ## Qué aprenderás
 Elegir entre I²C/SPI a nivel conceptual, verificar niveles y diagnosticar dirección, cableado y selección de dispositivos.
 
@@ -139,3 +141,12 @@ Diseña un sistema con dos sensores I²C y una pantalla SPI justificando niveles
 - [ ] Cableado razonable.
 
 Continúa con diseño y alimentación.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 18 — Comunicación serial entre dispositivos](../unidad18-comunicacion-serial/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 20 — Diseño de prototipos y alimentación](../unidad20-diseno-alimentacion/README.md)

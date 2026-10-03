@@ -1,5 +1,7 @@
 # Unidad 00 — Seguridad, materiales y entorno
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/arduino/)
+
 ## Qué aprenderás
 Preparar un banco de trabajo, reconocer riesgos de baja tensión, instalar Arduino IDE y distinguir fallos de software, USB y circuito.
 
@@ -146,3 +148,11 @@ Prepara tu banco y explica qué harías ante: placa no detectada, LED que se cal
 - [ ] Consulto especificaciones.
 
 Continúa con electrónica básica.
+
+
+---
+
+## Continuar el curso
+
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 01 — Electricidad y electrónica básica](../unidad01-electronica-basica/README.md)

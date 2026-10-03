@@ -1,5 +1,7 @@
 # Unidad 11 — Sensores analógicos, calibración y filtrado
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/arduino/)
+
 ## Qué aprenderás
 Convertir una lectura ADC en información útil sin inventar unidades físicas ni ocultar ruido con filtros arbitrarios.
 
@@ -136,3 +138,12 @@ Sistema de medición con calibración documentada, filtro justificado e histére
 - [ ] Incertidumbre reconocida.
 
 Continúa con ultrasonido.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 10 — Sensores digitales](../unidad10-sensores-digitales/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 12 — Distancia por ultrasonido y tiempo de vuelo](../unidad12-ultrasonido/README.md)

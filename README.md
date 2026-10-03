@@ -1,5 +1,11 @@
 # Curso de Arduino desde cero
 
+**[Comenzar el curso: Unidad 00 — Seguridad, materiales y entorno](unidad00-seguridad-entorno/README.md)**
+
+Puedes leer las lecciones aquí sin conocer GitHub. Al terminar cada unidad, usa **Siguiente unidad** para avanzar; **Unidad anterior** y **Volver al índice** te permiten regresar.
+
+[Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/arduino/)
+
 **Versión 1.0**
 
 Curso abierto para aprender **electrónica, programación y prototipado con Arduino** mediante prácticas progresivas y proyectos.

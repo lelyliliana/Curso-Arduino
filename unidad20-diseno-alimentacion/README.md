@@ -1,5 +1,7 @@
 # Unidad 20 — Diseño de prototipos y alimentación
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/arduino/)
+
 ## Qué aprenderás
 Pasar de módulos aislados a un sistema con presupuesto eléctrico, distribución de potencia, estados seguros y plan de integración.
 
@@ -194,3 +196,12 @@ Diseña completamente en papel un sistema y revísalo por energía, señales, fa
 - [ ] Plan incremental.
 
 Continúa con el proyecto de monitoreo.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 19 — I²C y SPI: buses compartidos](../unidad19-i2c-spi/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 21 — Proyecto: sistema de monitoreo](../unidad21-proyecto-monitoreo/README.md)

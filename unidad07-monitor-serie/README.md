@@ -1,5 +1,7 @@
 # Unidad 07 — Monitor serie y diagnóstico
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/arduino/)
+
 ## Qué aprenderás
 Usar comunicación serial como instrumento de observación, formular hipótesis y registrar datos sin alterar innecesariamente el sistema.
 
@@ -130,3 +132,12 @@ Diseña un formato serial para diagnosticar sensor→decisión→actuador y elim
 - [ ] Puedo graficar señales.
 
 Continúa con funciones.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 06 — PWM: brillo y control proporcional](../unidad06-pwm/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 08 — Funciones y organización del código](../unidad08-funciones/README.md)

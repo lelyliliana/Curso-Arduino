@@ -1,5 +1,7 @@
 # Unidad 15 — Servomotores: señal, posición y alimentación
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/arduino/)
+
 ## Qué aprenderás
 Controlar un servo RC separando señal y potencia, limitar recorrido mecánico y reconocer síntomas de alimentación insuficiente.
 
@@ -145,3 +147,12 @@ Control de posición con límites calibrados, fuente justificada y movimiento qu
 - [ ] Movimiento no bloqueante.
 
 Continúa con motores DC.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 14 — Buzzer, tono y señales audibles](../unidad14-buzzer/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 16 — Motores DC, drivers y etapa de potencia](../unidad16-motores-dc/README.md)

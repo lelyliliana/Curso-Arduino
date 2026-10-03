@@ -1,5 +1,7 @@
 # Unidad 18 — Comunicación serial entre dispositivos
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/arduino/)
+
 ## Qué aprenderás
 Diseñar un protocolo simple, recibir mensajes sin bloquear y validar datos antes de actuar.
 
@@ -157,3 +159,12 @@ Protocolo textual robusto con tres comandos, límites y respuestas de error.
 - [ ] Entradas validadas.
 
 Continúa con I²C y SPI.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 17 — Pantallas y visualización local](../unidad17-pantallas/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 19 — I²C y SPI: buses compartidos](../unidad19-i2c-spi/README.md)

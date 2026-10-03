@@ -1,5 +1,7 @@
 # Unidad 06 — PWM: brillo y control proporcional
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/arduino/)
+
 ## Qué aprenderás
 Comprender duty cycle, diferenciar PWM de una salida analógica real y controlar una carga pequeña apropiada.
 
@@ -167,3 +169,12 @@ Control de brillo con potenciómetro, rango configurable y diagnóstico Serial.
 - [ ] Diagnostico entrada/salida.
 
 Continúa con Monitor Serie.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 05 — Entradas analógicas y ADC](../unidad05-entradas-analogicas/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 07 — Monitor serie y diagnóstico](../unidad07-monitor-serie/README.md)

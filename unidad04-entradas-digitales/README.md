@@ -1,5 +1,7 @@
 # Unidad 04 — Entradas digitales y pulsadores
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/arduino/)
+
 ## Qué aprenderás
 Leer niveles digitales sin entradas flotantes, usar INPUT_PULLUP y distinguir nivel eléctrico, evento y rebote.
 
@@ -159,3 +161,12 @@ Cada pulsación válida alterna el LED exactamente una vez, sin bloquear otras t
 - [ ] Considero debounce.
 
 Continúa con analógico.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 03 — Salidas digitales y LED](../unidad03-salidas-digitales/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 05 — Entradas analógicas y ADC](../unidad05-entradas-analogicas/README.md)

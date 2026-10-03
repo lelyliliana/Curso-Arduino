@@ -1,5 +1,7 @@
 # Unidad 16 — Motores DC, drivers y etapa de potencia
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/arduino/)
+
 ## Qué aprenderás
 Seleccionar una etapa de potencia a partir de tensión/corriente del motor y controlar dirección/velocidad sin exponer GPIO a la carga.
 
@@ -153,3 +155,12 @@ Diseña dirección+velocidad para un motor concreto con presupuesto eléctrico y
 - [ ] Prueba incremental.
 
 Continúa con pantallas.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 15 — Servomotores: señal, posición y alimentación](../unidad15-servomotores/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 17 — Pantallas y visualización local](../unidad17-pantallas/README.md)

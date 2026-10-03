@@ -1,5 +1,7 @@
 # Unidad 05 — Entradas analógicas y ADC
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/arduino/)
+
 ## Qué aprenderás
 Comprender qué mide analogRead, relacionar cuentas ADC con tensión y reconocer resolución, referencia, ruido y límites.
 
@@ -161,3 +163,12 @@ Crea monitor que muestre lectura, porcentaje y tensión estimada, documentando V
 - [ ] Observo ruido.
 
 Continúa con PWM.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 04 — Entradas digitales y pulsadores](../unidad04-entradas-digitales/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 06 — PWM: brillo y control proporcional](../unidad06-pwm/README.md)

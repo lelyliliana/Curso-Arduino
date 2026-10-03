@@ -1,5 +1,7 @@
 # Unidad 23 — Proyecto final: sistema embebido reproducible
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/arduino/)
+
 ## Propósito
 Diseñar, construir, probar y documentar un prototipo propio aplicando electrónica, programación, medición e integración.
 
@@ -238,3 +240,13 @@ Un proyecto fuerte:
 # Cierre
 
 > Un prototipo no es una colección de módulos conectados: es un sistema cuyas decisiones eléctricas, lógicas, temporales y mecánicas deben funcionar juntas y poder justificarse.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 22 — Proyecto: sistema automatizado](../unidad22-proyecto-automatizacion/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+
+Llegaste a la última unidad. Revisa tu proyecto y la lista de comprobación antes de dar por terminado el curso.

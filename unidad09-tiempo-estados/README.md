@@ -1,5 +1,7 @@
 # Unidad 09 — millis(), tareas cooperativas y máquinas de estados
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/arduino/)
+
 ## Qué aprenderás
 Gestionar varias tareas sin bloquear el loop y modelar comportamientos como estados/transiciones explícitas.
 
@@ -162,3 +164,12 @@ Semáforo no bloqueante que responda a botón sin alterar la temporización prin
 - [ ] Transiciones comprensibles.
 
 Continúa con sensores digitales.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 08 — Funciones y organización del código](../unidad08-funciones/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 10 — Sensores digitales](../unidad10-sensores-digitales/README.md)

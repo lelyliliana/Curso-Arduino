@@ -1,5 +1,7 @@
 # Unidad 03 — Salidas digitales y LED
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/arduino/)
+
 ## Qué aprenderás
 Controlar un GPIO como salida, calcular un circuito LED básico y diagnosticar software y conexión por separado.
 
@@ -135,3 +137,12 @@ Semáforo de tres LED con tabla de estados por fase y cálculo/justificación de
 - [ ] Respeto límites.
 
 Continúa con entradas digitales.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 02 — Conoce Arduino y tu primer programa](../unidad02-primer-programa/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 04 — Entradas digitales y pulsadores](../unidad04-entradas-digitales/README.md)

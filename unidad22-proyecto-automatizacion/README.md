@@ -1,5 +1,7 @@
 # Unidad 22 — Proyecto: sistema automatizado
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/arduino/)
+
 ## Propósito
 Tomar decisiones a partir de entradas reales y controlar un actuador con estados, temporización y comportamiento seguro ante fallos.
 
@@ -172,3 +174,12 @@ Implementa al menos tres estados funcionales y un estado de error real, demostra
 - [ ] Evidencia.
 
 Continúa con el proyecto final.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 21 — Proyecto: sistema de monitoreo](../unidad21-proyecto-monitoreo/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 23 — Proyecto final: sistema embebido reproducible](../unidad23-proyecto-final/README.md)

@@ -1,5 +1,7 @@
 # Unidad 10 — Sensores digitales
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/arduino/)
+
 ## Qué aprenderás
 Integrar sensores con salida discreta comprendiendo alimentación, niveles lógicos, polaridad de activación y límites del módulo.
 
@@ -147,3 +149,12 @@ Alarma no bloqueante que cuente eventos válidos y documente nivel eléctrico/es
 - [ ] Serial antes de acción.
 
 Continúa con sensores analógicos.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 09 — millis(), tareas cooperativas y máquinas de estados](../unidad09-tiempo-estados/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 11 — Sensores analógicos, calibración y filtrado](../unidad11-sensores-analogicos/README.md)

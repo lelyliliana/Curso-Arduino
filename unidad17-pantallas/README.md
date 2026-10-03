@@ -1,5 +1,7 @@
 # Unidad 17 — Pantallas y visualización local
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/arduino/)
+
 ## Qué aprenderás
 Identificar controlador/interfaz, actualizar una pantalla sin bloquear y diseñar información legible en recursos limitados.
 
@@ -139,3 +141,12 @@ Panel no bloqueante de dos sensores con estado de error y actualización solo cu
 - [ ] Errores visibles.
 
 Continúa con comunicación serial.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 16 — Motores DC, drivers y etapa de potencia](../unidad16-motores-dc/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 18 — Comunicación serial entre dispositivos](../unidad18-comunicacion-serial/README.md)

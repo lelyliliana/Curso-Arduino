@@ -1,5 +1,7 @@
 # Unidad 12 — Distancia por ultrasonido y tiempo de vuelo
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/arduino/)
+
 ## Qué aprenderás
 Generar un disparo, medir un pulso de eco con timeout y convertir tiempo a distancia reconociendo limitaciones físicas.
 
@@ -137,3 +139,12 @@ Sensor con timeout, validación, mediana y alerta por umbral con histéresis.
 - [ ] Limitaciones físicas reconocidas.
 
 Continúa con sensores ambientales.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 11 — Sensores analógicos, calibración y filtrado](../unidad11-sensores-analogicos/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 13 — Temperatura, humedad y sensores ambientales](../unidad13-temperatura-ambiente/README.md)

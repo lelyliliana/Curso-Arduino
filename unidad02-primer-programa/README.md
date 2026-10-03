@@ -1,5 +1,7 @@
 # Unidad 02 — Conoce Arduino y tu primer programa
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/arduino/)
+
 ## Qué aprenderás
 Reconocer la placa, comprender setup/loop y distinguir compilación, carga y ejecución.
 
@@ -162,3 +164,12 @@ Crea un patrón luminoso identificable y explica el recorrido completo código�
 - [ ] Sé volver a estado conocido.
 
 Continúa con salidas digitales.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 01 — Electricidad y electrónica básica](../unidad01-electronica-basica/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 03 — Salidas digitales y LED](../unidad03-salidas-digitales/README.md)
