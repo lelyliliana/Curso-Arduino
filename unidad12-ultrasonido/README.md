@@ -143,6 +143,15 @@ Continúa con sensores ambientales.
 
 ---
 
+
+## Laboratorio completo de referencia
+
+Esta unidad incluye [montaje, programas y práctica paso a paso](LABORATORIO.md), [soluciones razonadas](SOLUCIONES.md) y [registro de evidencias](../docs/EVIDENCIAS.md).
+
+**Práctica:** HC-SR04: distancia con timeout.
+
+**Alcance:** La velocidad depende del ambiente. No garantiza precisión de cada módulo ni superficies inclinadas.
+
 ## Continuar el curso
 
 - **Unidad anterior:** [Unidad 11 — Sensores analógicos, calibración y filtrado](../unidad11-sensores-analogicos/README.md)

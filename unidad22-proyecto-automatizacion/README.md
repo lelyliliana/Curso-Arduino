@@ -178,6 +178,15 @@ Continúa con el proyecto final.
 
 ---
 
+
+## Laboratorio completo de referencia
+
+Esta unidad incluye [montaje, programas y práctica paso a paso](LABORATORIO.md), [soluciones razonadas](SOLUCIONES.md) y [registro de evidencias](../docs/EVIDENCIAS.md).
+
+**Práctica:** Proyecto de iluminación automática local.
+
+**Alcance:** Umbrales requieren caracterización de tuLDR. No usa relé ni detecta todos los fallos eléctricos.
+
 ## Continuar el curso
 
 - **Unidad anterior:** [Unidad 21 — Proyecto: sistema de monitoreo](../unidad21-proyecto-monitoreo/README.md)

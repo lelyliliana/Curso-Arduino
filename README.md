@@ -6,11 +6,15 @@ Puedes leer las lecciones aquí sin conocer GitHub. Al terminar cada unidad, usa
 
 [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/arduino/)
 
-**Versión 1.0**
+**Versión 1.1 (laboratorios de referencia)**
 
 Curso abierto para aprender **electrónica, programación y prototipado con Arduino** mediante prácticas progresivas y proyectos.
 
 La ruta comienza con seguridad, electricidad básica y preparación del entorno, y avanza hacia entradas y salidas digitales y analógicas, sensores, actuadores, comunicación, organización del código y proyectos integradores.
+
+## Comenzar con un montaje reproducible
+
+Consulta el [entorno fijado](docs/ENTORNO.md), las [tablas de conexiones](docs/CONEXIONES.md) y los [24 laboratorios con 26 programas completos](laboratorios/README.md). Cada unidad enlaza su práctica ysoluciones. Revisa [qué se verificó](docs/VERIFICACION.md) y registra tus resultados físicos.
 
 ## Objetivo
 

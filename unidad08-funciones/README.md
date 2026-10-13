@@ -153,6 +153,15 @@ Continúa con tiempo no bloqueante.
 
 ---
 
+
+## Laboratorio completo de referencia
+
+Esta unidad incluye [montaje, programas y práctica paso a paso](LABORATORIO.md), [soluciones razonadas](SOLUCIONES.md) y [registro de evidencias](../docs/EVIDENCIAS.md).
+
+**Práctica:** Funciones: adquirir, decidir y representar.
+
+**Alcance:** Sin histéresis; los proyectos finales incorporan ese concepto.
+
 ## Continuar el curso
 
 - **Unidad anterior:** [Unidad 07 — Monitor serie y diagnóstico](../unidad07-monitor-serie/README.md)

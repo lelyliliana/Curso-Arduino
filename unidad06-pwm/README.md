@@ -173,6 +173,15 @@ Continúa con Monitor Serie.
 
 ---
 
+
+## Laboratorio completo de referencia
+
+Esta unidad incluye [montaje, programas y práctica paso a paso](LABORATORIO.md), [soluciones razonadas](SOLUCIONES.md) y [registro de evidencias](../docs/EVIDENCIAS.md).
+
+**Práctica:** Brillo mediante PWM.
+
+**Alcance:** No alimentes motor desde este pin; necesita driver de Unidad16.
+
 ## Continuar el curso
 
 - **Unidad anterior:** [Unidad 05 — Entradas analógicas y ADC](../unidad05-entradas-analogicas/README.md)

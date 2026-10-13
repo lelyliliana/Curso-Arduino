@@ -142,6 +142,15 @@ Continúa con ultrasonido.
 
 ---
 
+
+## Laboratorio completo de referencia
+
+Esta unidad incluye [montaje, programas y práctica paso a paso](LABORATORIO.md), [soluciones razonadas](SOLUCIONES.md) y [registro de evidencias](../docs/EVIDENCIAS.md).
+
+**Práctica:** LDR y filtrado de ruido.
+
+**Alcance:** No determina luz absoluta ni garantiza detectar desconexión de un divisor.
+
 ## Continuar el curso
 
 - **Unidad anterior:** [Unidad 10 — Sensores digitales](../unidad10-sensores-digitales/README.md)

@@ -145,6 +145,15 @@ Continúa con comunicación serial.
 
 ---
 
+
+## Laboratorio completo de referencia
+
+Esta unidad incluye [montaje, programas y práctica paso a paso](LABORATORIO.md), [soluciones razonadas](SOLUCIONES.md) y [registro de evidencias](../docs/EVIDENCIAS.md).
+
+**Práctica:** LCD HD44780 de16×2 en paralelo.
+
+**Alcance:** La retroiluminación necesita corriente limitada según tu módulo; no asumir resistencia incorporada.
+
 ## Continuar el curso
 
 - **Unidad anterior:** [Unidad 16 — Motores DC, drivers y etapa de potencia](../unidad16-motores-dc/README.md)

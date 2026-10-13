@@ -165,6 +165,15 @@ Continúa con la placa y primer sketch.
 
 ---
 
+
+## Laboratorio completo de referencia
+
+Esta unidad incluye [montaje, programas y práctica paso a paso](LABORATORIO.md), [soluciones razonadas](SOLUCIONES.md) y [registro de evidencias](../docs/EVIDENCIAS.md).
+
+**Práctica:** Ley de Ohm aplicada a un LED.
+
+**Alcance:** Para medir corriente usa multímetro apropiadamente; no conectes su modo amperímetro entre5V yGND.
+
 ## Continuar el curso
 
 - **Unidad anterior:** [Unidad 00 — Seguridad, materiales y entorno](../unidad00-seguridad-entorno/README.md)

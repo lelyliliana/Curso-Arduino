@@ -151,6 +151,15 @@ Continúa con motores DC.
 
 ---
 
+
+## Laboratorio completo de referencia
+
+Esta unidad incluye [montaje, programas y práctica paso a paso](LABORATORIO.md), [soluciones razonadas](SOLUCIONES.md) y [registro de evidencias](../docs/EVIDENCIAS.md).
+
+**Práctica:** Servomotor con fuente separada.
+
+**Alcance:** No garantiza torque/corriente por nombreSG90; revisa tu modelo real antes de alimentar.
+
 ## Continuar el curso
 
 - **Unidad anterior:** [Unidad 14 — Buzzer, tono y señales audibles](../unidad14-buzzer/README.md)

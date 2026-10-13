@@ -157,6 +157,15 @@ Continúa con buzzer.
 
 ---
 
+
+## Laboratorio completo de referencia
+
+Esta unidad incluye [montaje, programas y práctica paso a paso](LABORATORIO.md), [soluciones razonadas](SOLUCIONES.md) y [registro de evidencias](../docs/EVIDENCIAS.md).
+
+**Práctica:** TMP36: temperatura y referencia ADC.
+
+**Alcance:** Esta práctica mide temperatura; humedad necesita otro sensor y contrato específico, no un valor inventado.
+
 ## Continuar el curso
 
 - **Unidad anterior:** [Unidad 12 — Distancia por ultrasonido y tiempo de vuelo](../unidad12-ultrasonido/README.md)

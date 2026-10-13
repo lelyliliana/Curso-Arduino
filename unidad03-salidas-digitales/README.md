@@ -141,6 +141,15 @@ Continúa con entradas digitales.
 
 ---
 
+
+## Laboratorio completo de referencia
+
+Esta unidad incluye [montaje, programas y práctica paso a paso](LABORATORIO.md), [soluciones razonadas](SOLUCIONES.md) y [registro de evidencias](../docs/EVIDENCIAS.md).
+
+**Práctica:** Semáforo con tres salidas.
+
+**Alcance:** Es una maqueta didáctica, no un controlador de tráfico certificado.
+
 ## Continuar el curso
 
 - **Unidad anterior:** [Unidad 02 — Conoce Arduino y tu primer programa](../unidad02-primer-programa/README.md)

@@ -173,6 +173,15 @@ Continúa con automatización.
 
 ---
 
+
+## Laboratorio completo de referencia
+
+Esta unidad incluye [montaje, programas y práctica paso a paso](LABORATORIO.md), [soluciones razonadas](SOLUCIONES.md) y [registro de evidencias](../docs/EVIDENCIAS.md).
+
+**Práctica:** Proyecto de monitoreo conTMP36 e histéresis.
+
+**Alcance:** Base ejecutable de monitoreo; gráficos,CSV yhumedad se incorporan solo cuando se implementan.
+
 ## Continuar el curso
 
 - **Unidad anterior:** [Unidad 20 — Diseño de prototipos y alimentación](../unidad20-diseno-alimentacion/README.md)

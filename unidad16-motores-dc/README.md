@@ -159,6 +159,15 @@ Continúa con pantallas.
 
 ---
 
+
+## Laboratorio completo de referencia
+
+Esta unidad incluye [montaje, programas y práctica paso a paso](LABORATORIO.md), [soluciones razonadas](SOLUCIONES.md) y [registro de evidencias](../docs/EVIDENCIAS.md).
+
+**Práctica:** Motor DC con TB6612FNG.
+
+**Alcance:** No conectar red doméstica. El ejemplo no implementa realimentación ni freno certificado.
+
 ## Continuar el curso
 
 - **Unidad anterior:** [Unidad 15 — Servomotores: señal, posición y alimentación](../unidad15-servomotores/README.md)

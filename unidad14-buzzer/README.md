@@ -121,6 +121,15 @@ Continúa con servomotores.
 
 ---
 
+
+## Laboratorio completo de referencia
+
+Esta unidad incluye [montaje, programas y práctica paso a paso](LABORATORIO.md), [soluciones razonadas](SOLUCIONES.md) y [registro de evidencias](../docs/EVIDENCIAS.md).
+
+**Práctica:** Buzzer pasivo por eventos.
+
+**Alcance:** Solo piezo adecuado; no conectes altavoz de baja impedancia directamente al pin.
+
 ## Continuar el curso
 
 - **Unidad anterior:** [Unidad 13 — Temperatura, humedad y sensores ambientales](../unidad13-temperatura-ambiente/README.md)

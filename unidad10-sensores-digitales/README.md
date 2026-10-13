@@ -153,6 +153,15 @@ Continúa con sensores analógicos.
 
 ---
 
+
+## Laboratorio completo de referencia
+
+Esta unidad incluye [montaje, programas y práctica paso a paso](LABORATORIO.md), [soluciones razonadas](SOLUCIONES.md) y [registro de evidencias](../docs/EVIDENCIAS.md).
+
+**Práctica:** Sensor digital de contacto.
+
+**Alcance:** No conectes salida de un módulo activo sin comprobar niveles; esta referencia es contacto seco.
+
 ## Continuar el curso
 
 - **Unidad anterior:** [Unidad 09 — millis(), tareas cooperativas y máquinas de estados](../unidad09-tiempo-estados/README.md)

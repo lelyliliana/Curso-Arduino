@@ -163,6 +163,15 @@ Continúa con I²C y SPI.
 
 ---
 
+
+## Laboratorio completo de referencia
+
+Esta unidad incluye [montaje, programas y práctica paso a paso](LABORATORIO.md), [soluciones razonadas](SOLUCIONES.md) y [registro de evidencias](../docs/EVIDENCIAS.md).
+
+**Práctica:** Comunicación entre dosUno con trama limitada.
+
+**Alcance:** SoftwareSerial tiene límites de simultaneidad ytemporización; no esRS232 ±voltios ni compatible directo3.3V.
+
 ## Continuar el curso
 
 - **Unidad anterior:** [Unidad 17 — Pantallas y visualización local](../unidad17-pantallas/README.md)

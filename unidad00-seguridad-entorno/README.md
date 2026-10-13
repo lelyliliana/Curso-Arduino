@@ -152,6 +152,15 @@ Continúa con electrónica básica.
 
 ---
 
+
+## Laboratorio completo de referencia
+
+Esta unidad incluye [montaje, programas y práctica paso a paso](LABORATORIO.md), [soluciones razonadas](SOLUCIONES.md) y [registro de evidencias](../docs/EVIDENCIAS.md).
+
+**Práctica:** Diagnóstico de placa y USB.
+
+**Alcance:** Compilación y carga no prueban todavía entradas/salidas ni precisión del reloj.
+
 ## Continuar el curso
 
 - **Volver al índice:** [Todas las unidades](../README.md)

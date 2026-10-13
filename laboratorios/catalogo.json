@@ -1,0 +1,106 @@
+[
+  {
+    "unidad": 0,
+    "sketch": "unidad00-seguridad-entorno/ejemplos/diagnostico_usb/diagnostico_usb.ino"
+  },
+  {
+    "unidad": 1,
+    "sketch": "unidad01-electronica-basica/ejemplos/ley_ohm/ley_ohm.ino"
+  },
+  {
+    "unidad": 2,
+    "sketch": "unidad02-primer-programa/ejemplos/blink_medido/blink_medido.ino"
+  },
+  {
+    "unidad": 3,
+    "sketch": "unidad03-salidas-digitales/ejemplos/semaforo_guiado/semaforo_guiado.ino"
+  },
+  {
+    "unidad": 4,
+    "sketch": "unidad04-entradas-digitales/ejemplos/boton_estable/boton_estable.ino"
+  },
+  {
+    "unidad": 5,
+    "sketch": "unidad05-entradas-analogicas/ejemplos/potenciometro_adc/potenciometro_adc.ino"
+  },
+  {
+    "unidad": 6,
+    "sketch": "unidad06-pwm/ejemplos/brillo_pwm/brillo_pwm.ino"
+  },
+  {
+    "unidad": 7,
+    "sketch": "unidad07-monitor-serie/ejemplos/monitor_comandos/monitor_comandos.ino"
+  },
+  {
+    "unidad": 8,
+    "sketch": "unidad08-funciones/ejemplos/funciones_medicion/funciones_medicion.ino"
+  },
+  {
+    "unidad": 9,
+    "sketch": "unidad09-tiempo-estados/ejemplos/dos_tareas/dos_tareas.ino"
+  },
+  {
+    "unidad": 10,
+    "sketch": "unidad10-sensores-digitales/ejemplos/contacto_reed/contacto_reed.ino"
+  },
+  {
+    "unidad": 11,
+    "sketch": "unidad11-sensores-analogicos/ejemplos/luz_filtrada/luz_filtrada.ino"
+  },
+  {
+    "unidad": 12,
+    "sketch": "unidad12-ultrasonido/ejemplos/distancia_timeout/distancia_timeout.ino"
+  },
+  {
+    "unidad": 13,
+    "sketch": "unidad13-temperatura-ambiente/ejemplos/temperatura_tmp36/temperatura_tmp36.ino"
+  },
+  {
+    "unidad": 14,
+    "sketch": "unidad14-buzzer/ejemplos/buzzer_eventos/buzzer_eventos.ino"
+  },
+  {
+    "unidad": 15,
+    "sketch": "unidad15-servomotores/ejemplos/servo_limitado/servo_limitado.ino"
+  },
+  {
+    "unidad": 16,
+    "sketch": "unidad16-motores-dc/ejemplos/motor_tb6612/motor_tb6612.ino"
+  },
+  {
+    "unidad": 17,
+    "sketch": "unidad17-pantallas/ejemplos/lcd_16x2/lcd_16x2.ino"
+  },
+  {
+    "unidad": 18,
+    "sketch": "unidad18-comunicacion-serial/ejemplos/serial_emisor/serial_emisor.ino"
+  },
+  {
+    "unidad": 18,
+    "sketch": "unidad18-comunicacion-serial/ejemplos/serial_receptor/serial_receptor.ino"
+  },
+  {
+    "unidad": 19,
+    "sketch": "unidad19-i2c-spi/ejemplos/i2c_escaner/i2c_escaner.ino"
+  },
+  {
+    "unidad": 19,
+    "sketch": "unidad19-i2c-spi/ejemplos/spi_loopback/spi_loopback.ino"
+  },
+  {
+    "unidad": 20,
+    "sketch": "unidad20-diseno-alimentacion/ejemplos/presupuesto_usb/presupuesto_usb.ino"
+  },
+  {
+    "unidad": 21,
+    "sketch": "unidad21-proyecto-monitoreo/ejemplos/monitoreo_ambiental/monitoreo_ambiental.ino"
+  },
+  {
+    "unidad": 22,
+    "sketch": "unidad22-proyecto-automatizacion/ejemplos/luz_automatica/luz_automatica.ino"
+  },
+  {
+    "unidad": 23,
+    "sketch": "unidad23-proyecto-final/ejemplos/integrador_local/integrador_local.ino"
+  }
+]

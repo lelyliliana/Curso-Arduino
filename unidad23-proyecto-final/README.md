@@ -244,6 +244,15 @@ Un proyecto fuerte:
 
 ---
 
+
+## Laboratorio completo de referencia
+
+Esta unidad incluye [montaje, programas y práctica paso a paso](LABORATORIO.md), [soluciones razonadas](SOLUCIONES.md) y [registro de evidencias](../docs/EVIDENCIAS.md).
+
+**Práctica:** Proyecto integrador: alarma ambiental con mando local.
+
+**Alcance:** Integrador educativo local. No es dispositivo de seguridad industrial ni demuestra precisión médica/ambiental certificada.
+
 ## Continuar el curso
 
 - **Unidad anterior:** [Unidad 22 — Proyecto: sistema automatizado](../unidad22-proyecto-automatizacion/README.md)

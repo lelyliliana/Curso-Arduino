@@ -136,6 +136,15 @@ Continúa con funciones.
 
 ---
 
+
+## Laboratorio completo de referencia
+
+Esta unidad incluye [montaje, programas y práctica paso a paso](LABORATORIO.md), [soluciones razonadas](SOLUCIONES.md) y [registro de evidencias](../docs/EVIDENCIAS.md).
+
+**Práctica:** Comandos y diagnóstico serial.
+
+**Alcance:** Interfaz local de caracteres, no protocolo autenticado ni parser de números.
+
 ## Continuar el curso
 
 - **Unidad anterior:** [Unidad 06 — PWM: brillo y control proporcional](../unidad06-pwm/README.md)

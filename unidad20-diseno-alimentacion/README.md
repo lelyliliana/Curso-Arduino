@@ -200,6 +200,15 @@ Continúa con el proyecto de monitoreo.
 
 ---
 
+
+## Laboratorio completo de referencia
+
+Esta unidad incluye [montaje, programas y práctica paso a paso](LABORATORIO.md), [soluciones razonadas](SOLUCIONES.md) y [registro de evidencias](../docs/EVIDENCIAS.md).
+
+**Práctica:** Presupuesto de alimentación y límites de medición.
+
+**Alcance:** No es un voltímetro de batería. No energices montajes de potencia sin diseño y protecciones apropiados.
+
 ## Continuar el curso
 
 - **Unidad anterior:** [Unidad 19 — I²C y SPI: buses compartidos](../unidad19-i2c-spi/README.md)

@@ -168,6 +168,15 @@ Continúa con salidas digitales.
 
 ---
 
+
+## Laboratorio completo de referencia
+
+Esta unidad incluye [montaje, programas y práctica paso a paso](LABORATORIO.md), [soluciones razonadas](SOLUCIONES.md) y [registro de evidencias](../docs/EVIDENCIAS.md).
+
+**Práctica:** Primer programa y temporización observable.
+
+**Alcance:** No mide brillo ni garantiza tiempos exactos de instrumentación.
+
 ## Continuar el curso
 
 - **Unidad anterior:** [Unidad 01 — Electricidad y electrónica básica](../unidad01-electronica-basica/README.md)

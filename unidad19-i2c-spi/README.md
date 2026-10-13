@@ -145,6 +145,15 @@ Continúa con diseño y alimentación.
 
 ---
 
+
+## Laboratorio completo de referencia
+
+Esta unidad incluye [montaje, programas y práctica paso a paso](LABORATORIO.md), [soluciones razonadas](SOLUCIONES.md) y [registro de evidencias](../docs/EVIDENCIAS.md).
+
+**Práctica:** Buses I2C ySPI por separado.
+
+**Alcance:** No son dos protocolos intercambiables; identificar direcciónI2C no reemplaza leer ficha.
+
 ## Continuar el curso
 
 - **Unidad anterior:** [Unidad 18 — Comunicación serial entre dispositivos](../unidad18-comunicacion-serial/README.md)

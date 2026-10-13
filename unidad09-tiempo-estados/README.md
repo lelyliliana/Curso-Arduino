@@ -168,6 +168,15 @@ Continúa con sensores digitales.
 
 ---
 
+
+## Laboratorio completo de referencia
+
+Esta unidad incluye [montaje, programas y práctica paso a paso](LABORATORIO.md), [soluciones razonadas](SOLUCIONES.md) y [registro de evidencias](../docs/EVIDENCIAS.md).
+
+**Práctica:** Dos tareas periódicas con millis.
+
+**Alcance:** No garantiza tiempo real estricto; Serial también consume tiempo.
+
 ## Continuar el curso
 
 - **Unidad anterior:** [Unidad 08 — Funciones y organización del código](../unidad08-funciones/README.md)

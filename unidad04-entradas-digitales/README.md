@@ -165,6 +165,15 @@ Continúa con analógico.
 
 ---
 
+
+## Laboratorio completo de referencia
+
+Esta unidad incluye [montaje, programas y práctica paso a paso](LABORATORIO.md), [soluciones razonadas](SOLUCIONES.md) y [registro de evidencias](../docs/EVIDENCIAS.md).
+
+**Práctica:** Pulsador con estabilización y estado.
+
+**Alcance:** 30ms es una elección de laboratorio; verifica el pulsador y no confundir evento con nivel sostenido.
+
 ## Continuar el curso
 
 - **Unidad anterior:** [Unidad 03 — Salidas digitales y LED](../unidad03-salidas-digitales/README.md)

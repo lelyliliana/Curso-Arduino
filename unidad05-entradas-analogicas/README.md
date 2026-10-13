@@ -167,6 +167,15 @@ Continúa con PWM.
 
 ---
 
+
+## Laboratorio completo de referencia
+
+Esta unidad incluye [montaje, programas y práctica paso a paso](LABORATORIO.md), [soluciones razonadas](SOLUCIONES.md) y [registro de evidencias](../docs/EVIDENCIAS.md).
+
+**Práctica:** Entrada analógica y porcentaje.
+
+**Alcance:** No es un voltímetro calibrado ni mide resistencia del potenciómetro directamente.
+
 ## Continuar el curso
 
 - **Unidad anterior:** [Unidad 04 — Entradas digitales y pulsadores](../unidad04-entradas-digitales/README.md)
