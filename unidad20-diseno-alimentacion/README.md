@@ -1,5 +1,7 @@
 # Unidad 20 — Diseño de prototipos y alimentación
 
+**[Desarrollo paso a paso: Diseñar alimentación y reconocer una medición circular](DESARROLLO.md)**. Sigue el recorrido del código, las tablas y los experimentos antes de resolver la práctica.
+
 [Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/arduino/)
 
 ## Qué aprenderás

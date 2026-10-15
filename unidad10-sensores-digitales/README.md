@@ -1,5 +1,7 @@
 # Unidad 10 — Sensores digitales
 
+**[Desarrollo paso a paso: Del contacto magnético a una interpretación de estado](DESARROLLO.md)**. Sigue el recorrido del código, las tablas y los experimentos antes de resolver la práctica.
+
 [Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/arduino/)
 
 ## Qué aprenderás

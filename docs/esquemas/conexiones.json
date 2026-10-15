@@ -1,0 +1,656 @@
+{
+  "led": {
+    "titulo": "Una salida con LED",
+    "conexiones": [
+      {
+        "origen": "Uno D8",
+        "elemento": "Resistencia 330 Ω",
+        "destino": "LED: ánodo → cátodo → GND",
+        "tipo": "s"
+      }
+    ],
+    "notas": [
+      "La resistencia está en serie con el LED. Una resistencia por rama.",
+      "Identifica ánodo y cátodo en la pieza real; desconecta USB para montar."
+    ]
+  },
+  "semaforo": {
+    "titulo": "Tres ramas del semáforo",
+    "conexiones": [
+      {
+        "origen": "Uno D8",
+        "elemento": "330 Ω",
+        "destino": "LED rojo: A → K → GND",
+        "tipo": "s"
+      },
+      {
+        "origen": "Uno D9",
+        "elemento": "330 Ω",
+        "destino": "LED amarillo: A → K → GND",
+        "tipo": "s"
+      },
+      {
+        "origen": "Uno D10",
+        "elemento": "330 Ω",
+        "destino": "LED verde: A → K → GND",
+        "tipo": "s"
+      }
+    ],
+    "notas": [
+      "A = ánodo; K = cátodo. Las tres masas pertenecen al GND del Uno.",
+      "Cada rama conserva su resistencia. Los LED no se conectan entre sí en serie."
+    ]
+  },
+  "boton-led": {
+    "titulo": "Pulsador y salida independiente",
+    "conexiones": [
+      {
+        "origen": "Uno D2",
+        "elemento": "Contacto del pulsador",
+        "destino": "Uno GND",
+        "tipo": "s"
+      },
+      {
+        "origen": "Uno D8",
+        "elemento": "330 Ω",
+        "destino": "LED: A → K → GND",
+        "tipo": "s"
+      }
+    ],
+    "notas": [
+      "D2 usa INPUT_PULLUP: abierto HIGH; pulsado LOW.",
+      "El contacto se cierra entre D2 y GND. Comprueba las parejas de patas del botón."
+    ]
+  },
+  "potenciometro": {
+    "titulo": "Potenciómetro como divisor",
+    "conexiones": [
+      {
+        "origen": "Uno 5 V",
+        "elemento": "Extremo 1",
+        "destino": "Potenciómetro 10 kΩ",
+        "tipo": "p"
+      },
+      {
+        "origen": "Uno A0",
+        "elemento": "Cursor",
+        "destino": "Potenciómetro 10 kΩ",
+        "tipo": "s"
+      },
+      {
+        "origen": "Uno GND",
+        "elemento": "Extremo 2",
+        "destino": "Potenciómetro 10 kΩ",
+        "tipo": "g"
+      }
+    ],
+    "notas": [
+      "Las tres filas se refieren al mismo potenciómetro. Identifica su cursor.",
+      "Al intercambiar extremos cambia el sentido de giro asociado al incremento."
+    ]
+  },
+  "pot-led": {
+    "titulo": "Lectura analógica y LED con PWM",
+    "conexiones": [
+      {
+        "origen": "Uno 5 V",
+        "elemento": "Extremo 1",
+        "destino": "Potenciómetro 10 kΩ",
+        "tipo": "p"
+      },
+      {
+        "origen": "Uno A0",
+        "elemento": "Cursor",
+        "destino": "Potenciómetro 10 kΩ",
+        "tipo": "s"
+      },
+      {
+        "origen": "Uno GND",
+        "elemento": "Extremo 2",
+        "destino": "Potenciómetro 10 kΩ",
+        "tipo": "g"
+      },
+      {
+        "origen": "Uno D5",
+        "elemento": "330 Ω",
+        "destino": "LED: A → K → GND",
+        "tipo": "s"
+      }
+    ],
+    "notas": [
+      "D5 es PWM en la referencia Uno R3. El LED conserva resistencia en serie.",
+      "Las filas del potenciómetro describen la misma pieza, no tres componentes."
+    ]
+  },
+  "reed": {
+    "titulo": "Reed de contacto seco y LED",
+    "conexiones": [
+      {
+        "origen": "Uno D2",
+        "elemento": "Contacto reed seco",
+        "destino": "Uno GND",
+        "tipo": "s"
+      },
+      {
+        "origen": "Uno D8",
+        "elemento": "330 Ω",
+        "destino": "LED: A → K → GND",
+        "tipo": "s"
+      }
+    ],
+    "notas": [
+      "D2 usa INPUT_PULLUP. Contacto abierto HIGH; contacto cerrado LOW.",
+      "Un módulo con salida electrónica necesita verificar su interfaz; no es este contacto."
+    ]
+  },
+  "ldr": {
+    "titulo": "Divisor de luz con LDR hacia 5 V",
+    "conexiones": [
+      {
+        "origen": "Uno 5 V",
+        "elemento": "LDR",
+        "destino": "Nodo X",
+        "tipo": "p"
+      },
+      {
+        "origen": "Nodo X",
+        "elemento": "Resistencia 10 kΩ",
+        "destino": "Uno GND",
+        "tipo": "g"
+      },
+      {
+        "origen": "Nodo X",
+        "elemento": "Conexión directa",
+        "destino": "Uno A0",
+        "tipo": "s"
+      }
+    ],
+    "notas": [
+      "Las tres etiquetas Nodo X representan la misma unión eléctrica.",
+      "Más luz suele reducir R de la LDR y aumentar A0 en esta disposición."
+    ]
+  },
+  "ultrasonido": {
+    "titulo": "HC-SR04 con Uno R3 de lógica 5 V",
+    "conexiones": [
+      {
+        "origen": "Uno 5 V",
+        "elemento": "Alimentación",
+        "destino": "HC-SR04 VCC",
+        "tipo": "p"
+      },
+      {
+        "origen": "Uno GND",
+        "elemento": "Referencia común",
+        "destino": "HC-SR04 GND",
+        "tipo": "g"
+      },
+      {
+        "origen": "Uno D7",
+        "elemento": "Disparo: salida Uno",
+        "destino": "HC-SR04 TRIG",
+        "tipo": "s"
+      },
+      {
+        "origen": "Uno D6",
+        "elemento": "Eco: entrada Uno",
+        "destino": "HC-SR04 ECHO",
+        "tipo": "s"
+      }
+    ],
+    "notas": [
+      "Verifica la referencia de tu módulo. ECHO de 5 V no va directo a ESP32.",
+      "Los nombres del módulo deben comprobarse en sus etiquetas y ficha."
+    ]
+  },
+  "tmp36": {
+    "titulo": "TMP36: nombres funcionales de terminales",
+    "conexiones": [
+      {
+        "origen": "Uno 5 V",
+        "elemento": "Alimentación",
+        "destino": "TMP36 +Vs",
+        "tipo": "p"
+      },
+      {
+        "origen": "Uno GND",
+        "elemento": "Referencia",
+        "destino": "TMP36 GND",
+        "tipo": "g"
+      },
+      {
+        "origen": "TMP36 VOUT",
+        "elemento": "Señal analógica",
+        "destino": "Uno A0",
+        "tipo": "s"
+      },
+      {
+        "origen": "TMP36 +Vs",
+        "elemento": "Condensador 100 nF",
+        "destino": "TMP36 GND",
+        "tipo": "p"
+      }
+    ],
+    "notas": [
+      "Coloca el condensador cerca del sensor, entre alimentación y GND.",
+      "No se dibuja una orientación de encapsulado: identifica patillas por ficha real."
+    ]
+  },
+  "buzzer": {
+    "titulo": "Piezo pasivo por pulsación",
+    "conexiones": [
+      {
+        "origen": "Uno D2",
+        "elemento": "Contacto del pulsador",
+        "destino": "Uno GND",
+        "tipo": "s"
+      },
+      {
+        "origen": "Uno D8",
+        "elemento": "Piezo pasivo de señal (+)",
+        "destino": "Piezo (−) → GND",
+        "tipo": "s"
+      }
+    ],
+    "notas": [
+      "D2 usa INPUT_PULLUP. El piezo debe ser compatible con el GPIO.",
+      "No representa un altavoz de baja impedancia ni un buzzer de potencia."
+    ]
+  },
+  "servo": {
+    "titulo": "Servo con alimentación separada",
+    "conexiones": [
+      {
+        "origen": "Uno D9",
+        "elemento": "Señal de control",
+        "destino": "Servo: señal",
+        "tipo": "s"
+      },
+      {
+        "origen": "Fuente servo +5 V",
+        "elemento": "Potencia del servo",
+        "destino": "Servo: V+",
+        "tipo": "p"
+      },
+      {
+        "origen": "Fuente servo −",
+        "elemento": "Masa común",
+        "destino": "Uno GND y Servo GND",
+        "tipo": "g"
+      },
+      {
+        "origen": "USB del computador",
+        "elemento": "Alimentación de placa",
+        "destino": "Uno USB",
+        "tipo": "p"
+      }
+    ],
+    "notas": [
+      "NO unir el positivo de la fuente del servo al pin 5 V del Uno por USB.",
+      "Dimensiona la fuente para picos de tu servo. Señal y potencia son recorridos distintos."
+    ]
+  },
+  "motor": {
+    "titulo": "Motor DC mediante carrier TB6612FNG",
+    "conexiones": [
+      {
+        "origen": "Uno D7",
+        "elemento": "Dirección 1",
+        "destino": "Carrier AIN1",
+        "tipo": "s"
+      },
+      {
+        "origen": "Uno D8",
+        "elemento": "Dirección 2",
+        "destino": "Carrier AIN2",
+        "tipo": "s"
+      },
+      {
+        "origen": "Uno D5",
+        "elemento": "PWM",
+        "destino": "Carrier PWMA",
+        "tipo": "s"
+      },
+      {
+        "origen": "Uno D4",
+        "elemento": "Habilitación",
+        "destino": "Carrier STBY",
+        "tipo": "s"
+      },
+      {
+        "origen": "Carrier STBY",
+        "elemento": "Pull-down 10 kΩ",
+        "destino": "GND",
+        "tipo": "g"
+      },
+      {
+        "origen": "Uno 5 V",
+        "elemento": "Lógica",
+        "destino": "Carrier VCC",
+        "tipo": "p"
+      },
+      {
+        "origen": "Fuente motor +6 V",
+        "elemento": "Potencia",
+        "destino": "Carrier VM",
+        "tipo": "p"
+      },
+      {
+        "origen": "Uno GND",
+        "elemento": "Masa común",
+        "destino": "Carrier GND y fuente −",
+        "tipo": "g"
+      },
+      {
+        "origen": "Carrier AO1 / AO2",
+        "elemento": "Dos terminales",
+        "destino": "Motor DC de referencia 6 V",
+        "tipo": "s"
+      }
+    ],
+    "notas": [
+      "Verifica pinout, desacoplo y corriente admisible del carrier y del motor.",
+      "Canal B no usado: fija sus entradas según ficha. No conectar motor a GPIO."
+    ]
+  },
+  "lcd": {
+    "titulo": "LCD paralelo 16×2: seis señales de control",
+    "conexiones": [
+      {
+        "origen": "Uno D12",
+        "elemento": "RS",
+        "destino": "LCD pin 4",
+        "tipo": "s"
+      },
+      {
+        "origen": "Uno D11",
+        "elemento": "E",
+        "destino": "LCD pin 6",
+        "tipo": "s"
+      },
+      {
+        "origen": "Uno D5",
+        "elemento": "D4 del LCD",
+        "destino": "LCD pin 11",
+        "tipo": "s"
+      },
+      {
+        "origen": "Uno D4",
+        "elemento": "D5 del LCD",
+        "destino": "LCD pin 12",
+        "tipo": "s"
+      },
+      {
+        "origen": "Uno D3",
+        "elemento": "D6 del LCD",
+        "destino": "LCD pin 13",
+        "tipo": "s"
+      },
+      {
+        "origen": "Uno D2",
+        "elemento": "D7 del LCD",
+        "destino": "LCD pin 14",
+        "tipo": "s"
+      },
+      {
+        "origen": "Uno 5 V",
+        "elemento": "Alimentación lógica",
+        "destino": "LCD VDD pin 2",
+        "tipo": "p"
+      },
+      {
+        "origen": "Uno GND",
+        "elemento": "Masa / solo escritura",
+        "destino": "LCD VSS pin 1 y RW pin 5",
+        "tipo": "g"
+      },
+      {
+        "origen": "Pot contraste: cursor",
+        "elemento": "Extremos 5 V y GND",
+        "destino": "LCD VO pin 3",
+        "tipo": "s"
+      },
+      {
+        "origen": "Pot de entrada: cursor",
+        "elemento": "Extremos 5 V y GND",
+        "destino": "Uno A0",
+        "tipo": "s"
+      }
+    ],
+    "notas": [
+      "LCD D0..D3 (pines 7..10): sin conectar en modo 4 bits.",
+      "Backlight A/K: limitación según módulo. Consulta tabla completa de CONEXIONES.md."
+    ]
+  },
+  "serial": {
+    "titulo": "Dos Uno: señales cruzadas y masa común",
+    "conexiones": [
+      {
+        "origen": "Uno A: TX D11",
+        "elemento": "Datos A → B",
+        "destino": "Uno B: RX D10",
+        "tipo": "s"
+      },
+      {
+        "origen": "Uno B: TX D11",
+        "elemento": "Datos B → A",
+        "destino": "Uno A: RX D10",
+        "tipo": "s"
+      },
+      {
+        "origen": "Uno A: GND",
+        "elemento": "Referencia común",
+        "destino": "Uno B: GND",
+        "tipo": "g"
+      }
+    ],
+    "notas": [
+      "Cada placa por su USB; NO unir sus positivos de 5 V.",
+      "SoftwareSerial 9600 baud entre placas; cada monitor USB usa 115200."
+    ]
+  },
+  "i2c": {
+    "titulo": "I2C con periférico conocido compatible 5 V",
+    "conexiones": [
+      {
+        "origen": "Uno A4 / SDA",
+        "elemento": "Línea SDA",
+        "destino": "Periférico SDA",
+        "tipo": "s"
+      },
+      {
+        "origen": "Uno A5 / SCL",
+        "elemento": "Línea SCL",
+        "destino": "Periférico SCL",
+        "tipo": "s"
+      },
+      {
+        "origen": "Uno 5 V",
+        "elemento": "Solo módulo compatible",
+        "destino": "Periférico VCC",
+        "tipo": "p"
+      },
+      {
+        "origen": "Uno GND",
+        "elemento": "Referencia común",
+        "destino": "Periférico GND",
+        "tipo": "g"
+      },
+      {
+        "origen": "SDA",
+        "elemento": "Pull-up según diseño",
+        "destino": "5 V compatible",
+        "tipo": "p"
+      },
+      {
+        "origen": "SCL",
+        "elemento": "Pull-up según diseño",
+        "destino": "5 V compatible",
+        "tipo": "p"
+      }
+    ],
+    "notas": [
+      "Comprueba las pull-ups que ya trae el módulo antes de añadir otras.",
+      "Esquema para referencia compatible 5 V; no representa un módulo cualquiera."
+    ]
+  },
+  "spi": {
+    "titulo": "SPI loopback: salida conectada a entrada",
+    "conexiones": [
+      {
+        "origen": "Uno D11 / MOSI",
+        "elemento": "Puente directo",
+        "destino": "Uno D12 / MISO",
+        "tipo": "s"
+      },
+      {
+        "origen": "Uno D10 / SS",
+        "elemento": "Configuración por código",
+        "destino": "OUTPUT y HIGH",
+        "tipo": "s"
+      },
+      {
+        "origen": "Uno D13 / SCK",
+        "elemento": "Reloj del controlador",
+        "destino": "Sin periférico conectado",
+        "tipo": "s"
+      }
+    ],
+    "notas": [
+      "Solo se instala el puente D11–D12; D10 y D13 se muestran como configuración.",
+      "No hay esclavo ni CS de periférico. Este ensayo no lee registros de un sensor."
+    ]
+  },
+  "divisor": {
+    "titulo": "Divisor del propio riel: experimento ratiométrico",
+    "conexiones": [
+      {
+        "origen": "Uno 5 V",
+        "elemento": "Resistencia 10 kΩ",
+        "destino": "Nodo X",
+        "tipo": "p"
+      },
+      {
+        "origen": "Nodo X",
+        "elemento": "Resistencia 10 kΩ",
+        "destino": "Uno GND",
+        "tipo": "g"
+      },
+      {
+        "origen": "Nodo X",
+        "elemento": "Conexión directa",
+        "destino": "Uno A1",
+        "tipo": "s"
+      }
+    ],
+    "notas": [
+      "Nodo X es la misma unión en las tres filas. ADC y divisor comparten el riel.",
+      "NO es un voltímetro independiente ni un circuito de medición de batería."
+    ]
+  },
+  "monitoreo": {
+    "titulo": "Monitoreo con TMP36 y LED",
+    "conexiones": [
+      {
+        "origen": "Uno 5 V / GND",
+        "elemento": "Alimentación + desacoplo",
+        "destino": "TMP36 +Vs / GND",
+        "tipo": "p"
+      },
+      {
+        "origen": "TMP36 VOUT",
+        "elemento": "Señal analógica",
+        "destino": "Uno A0",
+        "tipo": "s"
+      },
+      {
+        "origen": "Uno D8",
+        "elemento": "330 Ω",
+        "destino": "LED: A → K → GND",
+        "tipo": "s"
+      }
+    ],
+    "notas": [
+      "TMP36: 100 nF entre +Vs y GND; identifica patillas en la ficha.",
+      "Unidad 21: LED indica alerta o diagnóstico; Serial distingue el motivo."
+    ]
+  },
+  "automatizacion": {
+    "titulo": "Iluminación automática local",
+    "conexiones": [
+      {
+        "origen": "Uno 5 V",
+        "elemento": "LDR",
+        "destino": "Nodo X",
+        "tipo": "p"
+      },
+      {
+        "origen": "Nodo X",
+        "elemento": "10 kΩ",
+        "destino": "Uno GND",
+        "tipo": "g"
+      },
+      {
+        "origen": "Nodo X",
+        "elemento": "Señal analógica",
+        "destino": "Uno A0",
+        "tipo": "s"
+      },
+      {
+        "origen": "Uno D5",
+        "elemento": "330 Ω",
+        "destino": "LED: A → K → GND",
+        "tipo": "s"
+      },
+      {
+        "origen": "Uno D2",
+        "elemento": "Contacto del pulsador",
+        "destino": "Uno GND",
+        "tipo": "s"
+      }
+    ],
+    "notas": [
+      "Nodo X es una sola unión. D2 usa INPUT_PULLUP.",
+      "Se controla un LED de laboratorio; no hay relé ni carga de red."
+    ]
+  },
+  "integrador": {
+    "titulo": "Integrador: sensor, modo y dos salidas",
+    "conexiones": [
+      {
+        "origen": "Uno 5 V / GND",
+        "elemento": "Alimentación + desacoplo",
+        "destino": "TMP36 +Vs / GND",
+        "tipo": "p"
+      },
+      {
+        "origen": "TMP36 VOUT",
+        "elemento": "Señal analógica",
+        "destino": "Uno A0",
+        "tipo": "s"
+      },
+      {
+        "origen": "Uno D8",
+        "elemento": "330 Ω",
+        "destino": "LED: A → K → GND",
+        "tipo": "s"
+      },
+      {
+        "origen": "Uno D7",
+        "elemento": "Piezo pasivo (+)",
+        "destino": "Piezo (−) → GND",
+        "tipo": "s"
+      },
+      {
+        "origen": "Uno D2",
+        "elemento": "Contacto del pulsador",
+        "destino": "Uno GND",
+        "tipo": "s"
+      }
+    ],
+    "notas": [
+      "TMP36: 100 nF entre +Vs y GND; comprueba ficha de encapsulado.",
+      "Aquí el piezo usa D7; D8 ya pertenece al LED. D2 usa INPUT_PULLUP."
+    ]
+  }
+}

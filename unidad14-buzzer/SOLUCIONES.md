@@ -1,21 +1,25 @@
-# Soluciones razonadas del laboratorio 14
+# Soluciones desarrolladas de la Unidad 14
 
-[Volver al laboratorio](LABORATORIO.md)
+[Laboratorio](LABORATORIO.md) · [Explicación paso a paso](DESARROLLO.md) · [Unidad](README.md)
 
-1. Un activo incluye oscilador y funciona distinto.
-2. Detiene generación de tono.
-3. Evita sonido sostenido accidental y explica comportamiento.
+Intenta primero los ejercicios del laboratorio. Compara el razonamiento y las condiciones, además del resultado.
 
-## Criterio para avanzar
+## 1. Buzzer activo
 
-Un tono de 150 ms por pulsación; mantener no reinicia continuamente.
+No se asume equivalente. El activo ya genera una frecuencia propia; el pasivo necesita una señal apropiada. Identifica consumo y ficha antes de usar el mismo circuito.
 
-El resultado esperado debe compararse con tu evidencia. Una solución escrita no sustituye la observación del montaje; las pruebas de escritorio validan reglas de software y los resultados eléctricos requieren placa/componentes.
+## 2. noTone
 
-## Entrega mínima
+Detiene la señal generada por tone en el pin indicado. Es útil para cancelación explícita. Una duración finita también permite terminar sin que el programa deba esperar en un delay.
 
-Incluye montaje y referencias, versión de core/bibliotecas, cambio exacto, entrada, esperado, observado y explicación. Para señales periódicas mide al menos varios eventos; para sensores indica fuente, unidad y condiciones de medición. Si utilizaste un pulsador para representar un sensor, decláralo.
+## 3. Límite temporal
 
-## Límite que debes explicar
+Evita que una orden aislada mantenga sonido indefinidamente. En la referencia la duración es 150 ms por evento; mantener el botón no crea un evento cada vuelta.
 
-Solo piezo adecuado; no conectes altavoz de baja impedancia directamente al pin.
+## Contraste de parámetros
+
+`1000, 300` conserva la frecuencia y duplica la duración respecto a la referencia. `1500, 150` cambia la frecuencia y conserva duración. Ninguno declara un nivel acústico calibrado. Una prueba que solo escucha sonido no comprueba exactamente milisegundos o hercios.
+
+## Evidencia de tu práctica
+
+Conserva predicción, cambio exacto y resultado observado en [EVIDENCIAS.md](../docs/EVIDENCIAS.md). Distingue cálculo, prueba de software y montaje físico. Una respuesta correcta en papel no sustituye una comprobación eléctrica.

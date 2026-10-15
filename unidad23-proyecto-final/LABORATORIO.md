@@ -1,6 +1,16 @@
 # Laboratorio 23: Proyecto integrador: alarma ambiental con mando local
 
+**[Desarrollo paso a paso: Transferir el integrador a un proyecto propio](DESARROLLO.md)**. Sigue el recorrido del código, las tablas y los experimentos antes de resolver la práctica.
+
 [Unidad](README.md) · [Entorno](../docs/ENTORNO.md) · [Conexiones de referencia](../docs/CONEXIONES.md)
+
+
+## Esquema de conexiones
+
+Estos esquemas muestran terminales y recorridos eléctricos, no posiciones de una protoboard ni orientaciones universales de componentes. Contrasta las etiquetas con tu pieza y con [la tabla de conexiones](../docs/CONEXIONES.md).
+
+![Integrador: sensor, modo y dos salidas](../docs/esquemas/integrador.svg)
+
 
 ## Objetivo y materiales
 
@@ -42,7 +52,7 @@ Intenta predecir antes de ejecutar y consulta [SOLUCIONES.md](SOLUCIONES.md) des
 
 ## Diagnóstico de la práctica
 
-- Sin mensajes: comprueba cable de datos, puerto, velocidad y RESET antes deañadir periféricos.
+- Sin mensajes: comprueba cable de datos, puerto, velocidad y RESET antes de añadir periféricos.
 - Programa cargado sin efecto: compara pin, polaridad y referencia de masa; desenergiza antes de corregir.
 - Lecturas inesperadas: distingue ruido, entrada flotante, rango, sensor e interpretación; no conviertas un error en valor válido silenciosamente.
 - Reinicios al añadir una carga: revisa presupuesto de fuente y etapa de potencia. El GPIO ordena, no alimenta motores.

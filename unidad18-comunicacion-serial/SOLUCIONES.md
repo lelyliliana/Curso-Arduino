@@ -1,21 +1,25 @@
-# Soluciones razonadas del laboratorio 18
+# Soluciones desarrolladas de la Unidad 18
 
-[Volver al laboratorio](LABORATORIO.md)
+[Laboratorio](LABORATORIO.md) · [Explicación paso a paso](DESARROLLO.md) · [Unidad](README.md)
 
-1. No: solo dígitos y 0..1023.
-2. Solo recepción/validación del ejemplo.
-3. Cada enlace debe tener velocidades compatibles; USB 115200 y software 9600 son distintos.
+Intenta primero los ejercicios del laboratorio. Compara el razonamiento y las condiciones, además del resultado.
 
-## Criterio para avanzar
+## 1. Números negativos o texto extra
 
-VAL0..1023 aceptado y ACK; formato/rango/longitud inválidos rechazados.
+Se rechazan. `leerTrama` recorre los caracteres, exige dígitos, limita longitud y después convierte. Evita aceptar silenciosamente solo el prefijo numérico de 12x.
 
-El resultado esperado debe compararse con tu evidencia. Una solución escrita no sustituye la observación del montaje; las pruebas de escritorio validan reglas de software y los resultados eléctricos requieren placa/componentes.
+## 2. Alcance de ACK
 
-## Entrega mínima
+Confirma recepción y validación por el ejemplo. No confirma guardado, procedencia autenticada ni calidad del sensor. Cada garantía requeriría un mecanismo propio.
 
-Incluye montaje y referencias, versión de core/bibliotecas, cambio exacto, entrada, esperado, observado y explicación. Para señales periódicas mide al menos varios eventos; para sensores indica fuente, unidad y condiciones de medición. Si utilizaste un pulsador para representar un sensor, decláralo.
+## 3. Velocidades
 
-## Límite que debes explicar
+Las placas deben coincidir a 9600 en el enlace SoftwareSerial. El monitor de cada una coincide a 115200 con su Serial USB. No se necesita que enlaces independientes usen la misma velocidad.
 
-SoftwareSerial tiene límites de simultaneidad y temporización; no es RS232 ±voltios ni compatible directo 3.3 V.
+## Recuperación de trama larga
+
+El receptor reserva el terminador y activa descarte al superar el contenido disponible. Solo vuelve al estado inicial al recibir LF. Después una nueva `VAL 12` válida puede aceptarse. Una línea incompleta puede quedar pendiente; el diseño actual no tiene plazo de expiración de trama.
+
+## Evidencia de tu práctica
+
+Conserva predicción, cambio exacto y resultado observado en [EVIDENCIAS.md](../docs/EVIDENCIAS.md). Distingue cálculo, prueba de software y montaje físico. Una respuesta correcta en papel no sustituye una comprobación eléctrica.

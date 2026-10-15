@@ -1,5 +1,7 @@
 # Unidad 13 — Temperatura, humedad y sensores ambientales
 
+**[Desarrollo paso a paso: Convertir tensión a temperatura sin perder el sensor](DESARROLLO.md)**. Sigue el recorrido del código, las tablas y los experimentos antes de resolver la práctica.
+
 [Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/arduino/)
 
 ## Qué aprenderás

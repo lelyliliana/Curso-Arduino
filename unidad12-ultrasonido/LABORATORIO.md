@@ -1,6 +1,16 @@
 # Laboratorio 12: HC-SR04: distancia con timeout
 
+**[Desarrollo paso a paso: Del tiempo de eco a una distancia válida](DESARROLLO.md)**. Sigue el recorrido del código, las tablas y los experimentos antes de resolver la práctica.
+
 [Unidad](README.md) · [Entorno](../docs/ENTORNO.md) · [Conexiones de referencia](../docs/CONEXIONES.md)
+
+
+## Esquema de conexiones
+
+Estos esquemas muestran terminales y recorridos eléctricos, no posiciones de una protoboard ni orientaciones universales de componentes. Contrasta las etiquetas con tu pieza y con [la tabla de conexiones](../docs/CONEXIONES.md).
+
+![HC-SR04 con Uno R3 de lógica 5 V](../docs/esquemas/ultrasonido.svg)
+
 
 ## Objetivo y materiales
 
@@ -42,7 +52,7 @@ Intenta predecir antes de ejecutar y consulta [SOLUCIONES.md](SOLUCIONES.md) des
 
 ## Diagnóstico de la práctica
 
-- Sin mensajes: comprueba cable de datos, puerto, velocidad y RESET antes deañadir periféricos.
+- Sin mensajes: comprueba cable de datos, puerto, velocidad y RESET antes de añadir periféricos.
 - Programa cargado sin efecto: compara pin, polaridad y referencia de masa; desenergiza antes de corregir.
 - Lecturas inesperadas: distingue ruido, entrada flotante, rango, sensor e interpretación; no conviertas un error en valor válido silenciosamente.
 - Reinicios al añadir una carga: revisa presupuesto de fuente y etapa de potencia. El GPIO ordena, no alimenta motores.

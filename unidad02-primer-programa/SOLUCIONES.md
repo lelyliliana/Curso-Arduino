@@ -1,21 +1,31 @@
-# Soluciones razonadas del laboratorio 02
+# Soluciones desarrolladas de la Unidad 02
 
-[Volver al laboratorio](LABORATORIO.md)
+[Laboratorio](LABORATORIO.md) · [Explicación paso a paso](DESARROLLO.md) · [Unidad](README.md)
 
-1. Inicialización serial/pin y estado apagado.
-2.500 ms por ON y OFF juntos.
-3. Reporta estado ordenado por software.
+Intenta primero los ejercicios del laboratorio. Compara el razonamiento y las condiciones, además del resultado.
 
-## Criterio para avanzar
+## 1. Trabajo de setup
 
-Alterna ON/OFF; ciclo completo inicial 2 s, tras cambio 1 s.
+Inicializa Serial, configura el pin como salida y solicita LOW. Se ejecuta una vez por arranque; RESET vuelve a iniciarlo. El estado guardado comienza en false y la primera inversión ocurre después de la espera.
 
-El resultado esperado debe compararse con tu evidencia. Una solución escrita no sustituye la observación del montaje; las pruebas de escritorio validan reglas de software y los resultados eléctricos requieren placa/componentes.
+## 2. Ciclo con intervalo de 250 ms
 
-## Entrega mínima
+Con 250 ms entre transiciones, ON más OFF dura `250 ms + 250 ms = 500 ms`. Cambiar la condición a 500 produce un ciclo de 1000 ms. Con la referencia de 1000 por transición el ciclo completo es 2000 ms.
 
-Incluye montaje y referencias, versión de core/bibliotecas, cambio exacto, entrada, esperado, observado y explicación. Para señales periódicas mide al menos varios eventos; para sensores indica fuente, unidad y condiciones de medición. Si utilizaste un pulsador para representar un sensor, decláralo.
+## 3. ¿Qué prueba ON en el monitor?
 
-## Límite que debes explicar
+Prueba que se ejecutó una rama que anuncia el estado solicitado. No mide brillo ni continuidad eléctrica. Comparar la variable con una observación del LED añade evidencia diferente.
 
-No mide brillo ni garantiza tiempos exactos de instrumentación.
+## Tabla de comprobación
+
+| Intervalo de transición | Ciclo completo con tiempos iguales |
+|---:|---:|
+| 1000 ms | 2000 ms |
+| 500 ms | 1000 ms |
+| 250 ms | 500 ms |
+
+La referencia utiliza la marca del momento observado; pequeños retrasos del recorrido pueden acumularse. No la presentes como generador de precisión.
+
+## Evidencia de tu práctica
+
+Conserva predicción, cambio exacto y resultado observado en [EVIDENCIAS.md](../docs/EVIDENCIAS.md). Distingue cálculo, prueba de software y montaje físico. Una respuesta correcta en papel no sustituye una comprobación eléctrica.

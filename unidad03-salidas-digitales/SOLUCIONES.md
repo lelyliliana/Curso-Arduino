@@ -1,21 +1,25 @@
-# Soluciones razonadas del laboratorio 03
+# Soluciones desarrolladas de la Unidad 03
 
-[Volver al laboratorio](LABORATORIO.md)
+[Laboratorio](LABORATORIO.md) · [Explicación paso a paso](DESARROLLO.md) · [Unidad](README.md)
 
-1. Puede quedar una combinación no prevista.
-2. Añade estado explícito y su periodo.
-3. Limita corriente de cada rama independientemente.
+Intenta primero los ejercicios del laboratorio. Compara el razonamiento y las condiciones, además del resultado.
 
-## Criterio para avanzar
+## 1. Por qué escribir todas las salidas
 
-Rojo 3 s, verde 3 s, amarillo 1 s; solo una salida encendida por fase.
+Si solo enciendes el nuevo LED, el anterior puede seguir HIGH. `mostrar` expresa el estado completo: una salida encendida y las otras dos apagadas después de actualizar. Esto facilita contrastar cada fase con la tabla.
 
-El resultado esperado debe compararse con tu evidencia. Una solución escrita no sustituye la observación del montaje; las pruebas de escritorio validan reglas de software y los resultados eléctricos requieren placa/componentes.
+## 2. Fase apagada
 
-## Entrega mínima
+Una alternativa concreta es fase 3 con los tres LED LOW durante 500 ms. Modifica el número de estados a cuatro, asigna esa duración y añade el mensaje APAGADO. La condición de cada LED ya es falsa en fase 3, pero debes explicar deliberadamente ese comportamiento. El nuevo ciclo nominal es 7500 ms.
 
-Incluye montaje y referencias, versión de core/bibliotecas, cambio exacto, entrada, esperado, observado y explicación. Para señales periódicas mide al menos varios eventos; para sensores indica fuente, unidad y condiciones de medición. Si utilizaste un pulsador para representar un sensor, decláralo.
+## 3. Resistencias independientes
 
-## Límite que debes explicar
+Cada rama conduce en condiciones propias. Una resistencia por rama permite calcular su corriente sin depender de otras ramas. Mantén 330 Ω como referencia y verifica polaridades antes de encender.
 
-Es una maqueta didáctica, no un controlador de tráfico certificado.
+## Traza de la referencia
+
+Arranque: rojo. Después de 3 s: verde. Después de otros 3 s: amarillo. Un segundo más tarde: rojo. El periodo de una fase no es el periodo del semáforo completo.
+
+## Evidencia de tu práctica
+
+Conserva predicción, cambio exacto y resultado observado en [EVIDENCIAS.md](../docs/EVIDENCIAS.md). Distingue cálculo, prueba de software y montaje físico. Una respuesta correcta en papel no sustituye una comprobación eléctrica.

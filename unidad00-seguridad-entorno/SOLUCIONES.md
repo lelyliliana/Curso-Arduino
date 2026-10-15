@@ -1,21 +1,25 @@
-# Soluciones razonadas del laboratorio 00
+# Soluciones desarrolladas de la Unidad 00
 
-[Volver al laboratorio](LABORATORIO.md)
+[Laboratorio](LABORATORIO.md) · [Explicación paso a paso](DESARROLLO.md) · [Unidad](README.md)
 
-1. No: puede ser solo alimentación.
-2. 115200 baud, debe coincidir con Serial.begin.
-3. Aísla problemas de carga, alimentación y cableado.
+Intenta primero los ejercicios del laboratorio. Compara el razonamiento y las condiciones, además del resultado.
 
-## Criterio para avanzar
+## 1. ¿Un LED de alimentación demuestra conexión de datos?
 
-El texto de referencia aparece al arrancar; uptime vuelve a un valor pequeño tras RESET.
+No. Puede recibir energía mediante un cable que no transmite datos. Comprueba que aparece el puerto y que puedes cargar el programa. Cada comprobación responde a una pregunta distinta.
 
-El resultado esperado debe compararse con tu evidencia. Una solución escrita no sustituye la observación del montaje; las pruebas de escritorio validan reglas de software y los resultados eléctricos requieren placa/componentes.
+## 2. ¿Qué velocidad se selecciona?
 
-## Entrega mínima
+115200 baud porque coincide con `Serial.begin(115200)`. El número no se elige por preferencia: ambos extremos deben interpretar el enlace con la misma configuración.
 
-Incluye montaje y referencias, versión de core/bibliotecas, cambio exacto, entrada, esperado, observado y explicación. Para señales periódicas mide al menos varios eventos; para sensores indica fuente, unidad y condiciones de medición. Si utilizaste un pulsador para representar un sensor, decláralo.
+## 3. ¿Por qué comenzar sin periféricos?
 
-## Límite que debes explicar
+Aísla la comunicación y la carga. Después podrás distinguir un error del entorno de uno introducido por cableado o alimentación externa.
 
-Compilación y carga no prueban todavía entradas/salidas ni precisión del reloj.
+## Solución de la modificación
+
+Con intervalo 2000 se imprime aproximadamente cada dos segundos. El primer mensaje periódico aparece cuando se cumple la primera espera, no inmediatamente al arrancar. El encabezado sí se envía en `setup`. Los tiempos de apertura del monitor no son el origen de `millis`; el origen es el reinicio de la placa.
+
+## Evidencia de tu práctica
+
+Conserva predicción, cambio exacto y resultado observado en [EVIDENCIAS.md](../docs/EVIDENCIAS.md). Distingue cálculo, prueba de software y montaje físico. Una respuesta correcta en papel no sustituye una comprobación eléctrica.

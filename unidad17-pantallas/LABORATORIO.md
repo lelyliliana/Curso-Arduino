@@ -1,6 +1,16 @@
 # Laboratorio 17: LCD HD44780 de 16×2 en paralelo
 
+**[Desarrollo paso a paso: Mostrar un dato sin perder la conexión de la pantalla](DESARROLLO.md)**. Sigue el recorrido del código, las tablas y los experimentos antes de resolver la práctica.
+
 [Unidad](README.md) · [Entorno](../docs/ENTORNO.md) · [Conexiones de referencia](../docs/CONEXIONES.md)
+
+
+## Esquema de conexiones
+
+Estos esquemas muestran terminales y recorridos eléctricos, no posiciones de una protoboard ni orientaciones universales de componentes. Contrasta las etiquetas con tu pieza y con [la tabla de conexiones](../docs/CONEXIONES.md).
+
+![LCD paralelo 16×2: seis señales de control](../docs/esquemas/lcd.svg)
+
 
 ## Objetivo y materiales
 
@@ -17,12 +27,12 @@ Los números D/A corresponden a etiquetas de la tarjeta, no a patillas del chip.
 3. Abre uno de los programas completos: [lcd_16x2](ejemplos/lcd_16x2/lcd_16x2.ino). El archivo `.ino` y su carpeta tienen el mismo nombre; los `.h` adyacentes forman parte de ese programa.
 4. Selecciona Uno y puerto, compila y lee los mensajes del IDE. Una compilación fallida no se corrige cambiando un cable.
 5. Carga por USB y abre monitor a **115200 baud**. En prácticas de potencia conserva la fuente dedicada según el diseño de conexiones.
-6. Carga lcd_16x 2. Ajusta contraste. Gira pot de A0 y compara LCD con Serial.
+6. Carga lcd_16x2. Ajusta contraste. Gira pot de A0 y compara LCD con Serial.
 7. Registra resultado antes de modificar una sola condición. Vuelve al programa original tras experimentar.
 
 ## Resultado esperado
 
-Fila 1 muestra Curso Arduino; fila 2ADC actualizado sin dígitos residuales.
+Fila 1 muestra Curso Arduino; fila 2 muestra ADC actualizado sin dígitos residuales.
 
 Este resultado es un criterio para comprobar, no una afirmación de prueba física ya realizada. Conserva fecha, placa, componentes, entrada, esperado y observado en [EVIDENCIAS.md](../docs/EVIDENCIAS.md). Identifica cuándo se trata de cálculo, simulación o hardware real.
 
@@ -42,7 +52,7 @@ Intenta predecir antes de ejecutar y consulta [SOLUCIONES.md](SOLUCIONES.md) des
 
 ## Diagnóstico de la práctica
 
-- Sin mensajes: comprueba cable de datos, puerto, velocidad y RESET antes deañadir periféricos.
+- Sin mensajes: comprueba cable de datos, puerto, velocidad y RESET antes de añadir periféricos.
 - Programa cargado sin efecto: compara pin, polaridad y referencia de masa; desenergiza antes de corregir.
 - Lecturas inesperadas: distingue ruido, entrada flotante, rango, sensor e interpretación; no conviertas un error en valor válido silenciosamente.
 - Reinicios al añadir una carga: revisa presupuesto de fuente y etapa de potencia. El GPIO ordena, no alimenta motores.

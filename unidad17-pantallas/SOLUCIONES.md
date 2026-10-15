@@ -1,21 +1,25 @@
-# Soluciones razonadas del laboratorio 17
+# Soluciones desarrolladas de la Unidad 17
 
-[Volver al laboratorio](LABORATORIO.md)
+[Laboratorio](LABORATORIO.md) · [Explicación paso a paso](DESARROLLO.md) · [Unidad](README.md)
 
-1. No: interfaz/biblioteca distintas.
-2. Borra dígitos de un valor anterior más largo.
-3. Contraste, RS/E, datos, masa y alimentación.
+Intenta primero los ejercicios del laboratorio. Compara el razonamiento y las condiciones, además del resultado.
 
-## Criterio para avanzar
+## 1. Backpack I2C
 
-Fila 1 muestra Curso Arduino; fila 2ADC actualizado sin dígitos residuales.
+El programa no es intercambiable sin cambios. El montaje paralelo controla seis señales; un backpack introduce un expansor y direccionamiento. Necesitas identificarlo y usar una biblioteca compatible.
 
-El resultado esperado debe compararse con tu evidencia. Una solución escrita no sustituye la observación del montaje; las pruebas de escritorio validan reglas de software y los resultados eléctricos requieren placa/componentes.
+## 2. Espacios tras el número
 
-## Entrega mínima
+La pantalla conserva caracteres anteriores hasta sobrescribirlos. Después de mostrar 1023, escribir solo 8 puede dejar 8023. Los espacios borran restos dentro de esa región sin limpiar el título.
 
-Incluye montaje y referencias, versión de core/bibliotecas, cambio exacto, entrada, esperado, observado y explicación. Para señales periódicas mide al menos varios eventos; para sensores indica fuente, unidad y condiciones de medición. Si utilizaste un pulsador para representar un sensor, decláralo.
+## 3. Luz sin texto
 
-## Límite que debes explicar
+Comprueba contraste VO, alimentación de lógica, RW a GND y correspondencia RS/E/D4..D7. Que encienda el backlight no prueba comunicación con el controlador.
 
-La retroiluminación necesita corriente limitada según tu módulo; no asumir resistencia incorporada.
+## Ejercicio de porcentaje
+
+Usa una muestra guardada y la conversión de la Unidad 05. Muestra, por ejemplo, `Nivel=100%` y después espacios suficientes para el máximo anterior. Prueba transición de 100 a 0 y verifica que no quede un porcentaje anterior pegado al nuevo.
+
+## Evidencia de tu práctica
+
+Conserva predicción, cambio exacto y resultado observado en [EVIDENCIAS.md](../docs/EVIDENCIAS.md). Distingue cálculo, prueba de software y montaje físico. Una respuesta correcta en papel no sustituye una comprobación eléctrica.

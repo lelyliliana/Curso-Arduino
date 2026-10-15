@@ -1,21 +1,25 @@
-# Soluciones razonadas del laboratorio 13
+# Soluciones desarrolladas de la Unidad 13
 
-[Volver al laboratorio](LABORATORIO.md)
+[Laboratorio](LABORATORIO.md) · [Explicación paso a paso](DESARROLLO.md) · [Unidad](README.md)
 
-1.0.75 V.
-2. No: no tiene el mismo offset.
-3. Una entrada flotante puede parecer plausible; hace falta detección adicional.
+Intenta primero los ejercicios del laboratorio. Compara el razonamiento y las condiciones, además del resultado.
 
-## Criterio para avanzar
+## 1. Tensión a 25 °C
 
-Temperatura aproximada de ambiente; calentamiento moderado con mano puede variar lentamente.
+Despejamos `V = 0.5 + T / 100`. Para 25 da 0.75 V. El offset importa: aplicar solamente `V × 100` daría 75 °C, una respuesta equivocada aunque compile.
 
-El resultado esperado debe compararse con tu evidencia. Una solución escrita no sustituye la observación del montaje; las pruebas de escritorio validan reglas de software y los resultados eléctricos requieren placa/componentes.
+## 2. Usar un LM35
 
-## Entrega mínima
+Requiere su propia ecuación, pinout y condiciones eléctricas. No conserves el offset del TMP36 por tener una apariencia parecida. La identidad del componente forma parte del programa de medición.
 
-Incluye montaje y referencias, versión de core/bibliotecas, cambio exacto, entrada, esperado, observado y explicación. Para señales periódicas mide al menos varios eventos; para sensores indica fuente, unidad y condiciones de medición. Si utilizaste un pulsador para representar un sensor, decláralo.
+## 3. Desconectar el sensor
 
-## Límite que debes explicar
+No garantiza que el ADC salga del rango plausible. Una entrada flotante puede producir una cuenta aceptable. Detectar desconexión de forma confiable requiere un diseño adicional y pruebas específicas.
 
-Esta práctica mide temperatura; humedad necesita otro sensor y contrato específico, no un valor inventado.
+## Resolución de una cuenta
+
+Para raw 154: `(154.5 × 5 / 1024 - 0.5) × 100 ≈ 25.44 °C`. Un decimal impreso sería aproximadamente 25.4. La operación usa el centro del intervalo; no certifica la exactitud física del TMP36 ni de la referencia.
+
+## Evidencia de tu práctica
+
+Conserva predicción, cambio exacto y resultado observado en [EVIDENCIAS.md](../docs/EVIDENCIAS.md). Distingue cálculo, prueba de software y montaje físico. Una respuesta correcta en papel no sustituye una comprobación eléctrica.

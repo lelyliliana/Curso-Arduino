@@ -1,21 +1,25 @@
-# Soluciones razonadas del laboratorio 20
+# Soluciones desarrolladas de la Unidad 20
 
-[Volver al laboratorio](LABORATORIO.md)
+[Laboratorio](LABORATORIO.md) · [Explicación paso a paso](DESARROLLO.md) · [Unidad](README.md)
 
-1. La referencia cambia con el mismo riel; existe circularidad.
-2. En peor caso de alimentación/driver, no solo corriente sin carga.
-3. Potencia de motor/servo y lógica, con referencia común cuando requiera diseño.
+Intenta primero los ejercicios del laboratorio. Compara el razonamiento y las condiciones, además del resultado.
 
-## Criterio para avanzar
+## 1. Por qué no certifica la caída del riel
 
-Estimación queda cerca de 5 V porque referencia ADC es ese mismo riel: no permite verificar caída de fuente de forma independiente.
+El divisor produce la mitad del riel y el ADC compara contra ese mismo riel. La cuenta conserva aproximadamente media escala aunque cambie la tensión. El cálculo final reintroduce 5.0 como supuesto y por eso parece confirmar su propio valor.
 
-El resultado esperado debe compararse con tu evidencia. Una solución escrita no sustituye la observación del montaje; las pruebas de escritorio validan reglas de software y los resultados eléctricos requieren placa/componentes.
+## 2. Corriente de arranque
 
-## Entrega mínima
+Dimensiona fuente y driver considerando condiciones relevantes, incluidos picos y bloqueo según el actuador. Una lectura de corriente sin carga no garantiza operación con carga ni disipación admisible.
 
-Incluye montaje y referencias, versión de core/bibliotecas, cambio exacto, entrada, esperado, observado y explicación. Para señales periódicas mide al menos varios eventos; para sensores indica fuente, unidad y condiciones de medición. Si utilizaste un pulsador para representar un sensor, decláralo.
+## 3. Separar potencia y lógica
 
-## Límite que debes explicar
+Motor o servo utilizan el circuito de alimentación definido para ellos. La señal del Uno conserva una referencia de masa común cuando corresponde. No unas positivos de fuentes distintas por confundir masa común con alimentación común.
 
-No es un voltímetro de batería. No energices montajes de potencia sin diseño y protecciones apropiados.
+## Ejercicio resuelto
+
+Con un riel hipotético de 4.5 V, el nodo entrega 2.25 V; la razón sigue siendo 0.5. El programa aún estima cerca de 5 V porque usa la constante 5.0. Necesitarías otra referencia de medición para evaluar esa caída.
+
+## Evidencia de tu práctica
+
+Conserva predicción, cambio exacto y resultado observado en [EVIDENCIAS.md](../docs/EVIDENCIAS.md). Distingue cálculo, prueba de software y montaje físico. Una respuesta correcta en papel no sustituye una comprobación eléctrica.

@@ -1,21 +1,25 @@
-# Soluciones razonadas del laboratorio 08
+# Soluciones desarrolladas de la Unidad 08
 
-[Volver al laboratorio](LABORATORIO.md)
+[Laboratorio](LABORATORIO.md) · [Explicación paso a paso](DESARROLLO.md) · [Unidad](README.md)
 
-1. representar mediante digitalWrite.
-2. Cumple≥600, activa.
-3. Dos umbrales con memoria (histéresis), no solo promediar.
+Intenta primero los ejercicios del laboratorio. Compara el razonamiento y las condiciones, además del resultado.
 
-## Criterio para avanzar
+## 1. Función que cambia el LED
 
-LED ON cuando ADC≥600 y OFF debajo en versión inicial.
+`representar` llama a `digitalWrite`. `decidir` únicamente devuelve un booleano y `adquirir` lee A0. Esa separación permite probar la regla sin usar la placa como fuente de datos.
 
-El resultado esperado debe compararse con tu evidencia. Una solución escrita no sustituye la observación del montaje; las pruebas de escritorio validan reglas de software y los resultados eléctricos requieren placa/componentes.
+## 2. Caso exacto 600
 
-## Entrega mínima
+`600 >= 600` es verdadero, por tanto la salida se solicita encendida. La prueba con 600 distingue esta implementación de otra con `>`.
 
-Incluye montaje y referencias, versión de core/bibliotecas, cambio exacto, entrada, esperado, observado y explicación. Para señales periódicas mide al menos varios eventos; para sensores indica fuente, unidad y condiciones de medición. Si utilizaste un pulsador para representar un sensor, decláralo.
+## 3. Oscilación alrededor del umbral
 
-## Límite que debes explicar
+Con 599, 601, 599, 601 la referencia produce OFF, ON, OFF, ON. Para una banda 580..620, una regla con memoria puede conservar estado dentro de la banda. Un promedio y una histéresis resuelven aspectos distintos.
 
-Sin histéresis; los proyectos finales incorporan ese concepto.
+## Extensión desarrollada
+
+Con umbral 700, las entradas 699, 700 y 701 deben dar false, true y true. Modifica la constante, no tres números aislados. Después repite con la adquisición real para comprobar que la composición conserva la misma frontera.
+
+## Evidencia de tu práctica
+
+Conserva predicción, cambio exacto y resultado observado en [EVIDENCIAS.md](../docs/EVIDENCIAS.md). Distingue cálculo, prueba de software y montaje físico. Una respuesta correcta en papel no sustituye una comprobación eléctrica.

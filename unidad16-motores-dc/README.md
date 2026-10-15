@@ -1,5 +1,7 @@
 # Unidad 16 — Motores DC, drivers y etapa de potencia
 
+**[Desarrollo paso a paso: Separar control y potencia en un motor DC](DESARROLLO.md)**. Sigue el recorrido del código, las tablas y los experimentos antes de resolver la práctica.
+
 [Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/arduino/)
 
 ## Qué aprenderás

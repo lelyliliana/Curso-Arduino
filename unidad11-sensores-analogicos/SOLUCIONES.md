@@ -1,21 +1,25 @@
-# Soluciones razonadas del laboratorio 11
+# Soluciones desarrolladas de la Unidad 11
 
-[Volver al laboratorio](LABORATORIO.md)
+[Laboratorio](LABORATORIO.md) · [Explicación paso a paso](DESARROLLO.md) · [Unidad](README.md)
 
-1. Sí: cambia la relación del divisor.
-2. No: más suave y más lento.
-3. Caracterización y referencia adecuada; no basta renombrar variable.
+Intenta primero los ejercicios del laboratorio. Compara el razonamiento y las condiciones, además del resultado.
 
-## Criterio para avanzar
+## 1. Intercambiar componentes
 
-Más luz reduce resistencia LDR y suele aumentar ADC en este montaje; filtrado cambia más lentamente.
+Con LDR arriba, más luz suele aumentar la tensión del nodo. Si la LDR se coloca hacia GND, el divisor cambia y más luz suele reducir la lectura. La interpretación depende del circuito concreto.
 
-El resultado esperado debe compararse con tu evidencia. Una solución escrita no sustituye la observación del montaje; las pruebas de escritorio validan reglas de software y los resultados eléctricos requieren placa/componentes.
+## 2. Coeficiente 0.1
 
-## Entrega mínima
+Para anterior 500 y lectura 700: `500 + 0.1 × 200 = 520`. Con 0.2 produce 540. Un coeficiente menor conserva más memoria; no mejora automáticamente precisión ni detección de cambios rápidos.
 
-Incluye montaje y referencias, versión de core/bibliotecas, cambio exacto, entrada, esperado, observado y explicación. Para señales periódicas mide al menos varios eventos; para sensores indica fuente, unidad y condiciones de medición. Si utilizaste un pulsador para representar un sensor, decláralo.
+## 3. Convertir a lux
 
-## Límite que debes explicar
+Necesitas caracterización de la LDR y una referencia de iluminación adecuada, con condiciones documentadas. Esta práctica muestra cuentas y filtro; no lux.
 
-No determina luz absoluta ni garantiza detectar desconexión de un divisor.
+## Solución de seguimiento
+
+Con raw 700 sostenido y coeficiente 0.2, después de 540 llega 572 y luego 597.6. Si tu cálculo vuelve siempre a 540, probablemente reiniciaste el estado filtrado en cada vuelta. La variable global conserva la memoria del filtro.
+
+## Evidencia de tu práctica
+
+Conserva predicción, cambio exacto y resultado observado en [EVIDENCIAS.md](../docs/EVIDENCIAS.md). Distingue cálculo, prueba de software y montaje físico. Una respuesta correcta en papel no sustituye una comprobación eléctrica.

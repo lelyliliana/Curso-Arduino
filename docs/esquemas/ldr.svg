@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="418" viewBox="0 0 1080 418" role="img" aria-labelledby="titulo descripcion">
+<title id="titulo">Divisor de luz con LDR hacia 5 V</title>
+<desc id="descripcion">Esquema funcional de conexiones para Uno R3. Uno 5 V — LDR — Nodo X; Nodo X — Resistencia 10 kΩ — Uno GND; Nodo X — Conexión directa — Uno A0.</desc>
+<rect width="1080" height="418" fill="#f3f6fa"/>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif;fill:#15263c}.title{font-size:24px;font-weight:bold}.sub{font-size:14px}.pin{font-size:17px;font-weight:bold}.via{font-size:14px}.note{font-size:15px}</style>
+<text x="32" y="40" class="title">Divisor de luz con LDR hacia 5 V</text>
+<text x="32" y="66" class="sub">CONEXIONES FUNCIONALES · UNO R3 / ATmega328P · NO ES UNA VISTA FÍSICA DE PROTOBOARD</text>
+<rect x="26" y="85" width="1028" height="55" rx="9" fill="white"/>
+<text x="42" y="117" class="pin">Uno 5 V</text>
+<path d="M 320 112 H 675" fill="none" stroke="#b93828" stroke-width="3"/>
+<circle cx="320" cy="112" r="4" fill="#b93828"/><circle cx="675" cy="112" r="4" fill="#b93828"/>
+<rect x="355" y="98" width="285" height="28" rx="5" fill="#edf3f9" stroke="#b93828"/>
+<text x="497" y="117" class="via" text-anchor="middle">LDR</text>
+<text x="696" y="117" class="pin">Nodo X</text>
+<rect x="26" y="151" width="1028" height="55" rx="9" fill="white"/>
+<text x="42" y="183" class="pin">Nodo X</text>
+<path d="M 320 178 H 675" fill="none" stroke="#485569" stroke-width="3"/>
+<circle cx="320" cy="178" r="4" fill="#485569"/><circle cx="675" cy="178" r="4" fill="#485569"/>
+<rect x="355" y="164" width="285" height="28" rx="5" fill="#edf3f9" stroke="#485569"/>
+<text x="497" y="183" class="via" text-anchor="middle">Resistencia 10 kΩ</text>
+<text x="696" y="183" class="pin">Uno GND</text>
+<rect x="26" y="217" width="1028" height="55" rx="9" fill="white"/>
+<text x="42" y="249" class="pin">Nodo X</text>
+<path d="M 320 244 H 675" fill="none" stroke="#1477a2" stroke-width="3"/>
+<circle cx="320" cy="244" r="4" fill="#1477a2"/><circle cx="675" cy="244" r="4" fill="#1477a2"/>
+<rect x="355" y="230" width="285" height="28" rx="5" fill="#edf3f9" stroke="#1477a2"/>
+<text x="497" y="249" class="via" text-anchor="middle">Conexión directa</text>
+<text x="696" y="249" class="pin">Uno A0</text>
+<text x="32" y="306" class="note">Las tres etiquetas Nodo X representan la misma unión eléctrica.</text>
+<text x="32" y="331" class="note">Más luz suele reducir R de la LDR y aumentar A0 en esta disposición.</text>
+<text x="32" y="398" class="sub">Señales: azul · Alimentación: rojo · Masa: gris. Montar sin alimentación y contrastar con la tabla del curso.</text></svg>

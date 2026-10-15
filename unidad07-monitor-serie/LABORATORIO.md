@@ -1,6 +1,16 @@
 # Laboratorio 07: Comandos y diagnóstico serial
 
+**[Desarrollo paso a paso: Construir un diálogo de comandos por Serial](DESARROLLO.md)**. Sigue el recorrido del código, las tablas y los experimentos antes de resolver la práctica.
+
 [Unidad](README.md) · [Entorno](../docs/ENTORNO.md) · [Conexiones de referencia](../docs/CONEXIONES.md)
+
+
+## Esquema de conexiones
+
+Estos esquemas muestran terminales y recorridos eléctricos, no posiciones de una protoboard ni orientaciones universales de componentes. Contrasta las etiquetas con tu pieza y con [la tabla de conexiones](../docs/CONEXIONES.md).
+
+![Una salida con LED](../docs/esquemas/led.svg)
+
 
 ## Objetivo y materiales
 
@@ -34,15 +44,15 @@ Lee primero `setup` para conocer el estado inicial, después `loop` y finalmente
 
 ## Ejercicios
 
-1. ¿Enviar"10" es un número diez?
-2. ¿La respuesta"ON" comprueba el LED físico?
-3. Añadeh para mostrar ayuda.
+1. ¿Enviar "10" es un número diez?
+2. ¿La respuesta "ON" comprueba el LED físico?
+3. Añade h para mostrar ayuda.
 
 Intenta predecir antes de ejecutar y consulta [SOLUCIONES.md](SOLUCIONES.md) después. Explica la causa de una diferencia entre previsto y observado; no cambies el objetivo para convertir un fallo en éxito.
 
 ## Diagnóstico de la práctica
 
-- Sin mensajes: comprueba cable de datos, puerto, velocidad y RESET antes deañadir periféricos.
+- Sin mensajes: comprueba cable de datos, puerto, velocidad y RESET antes de añadir periféricos.
 - Programa cargado sin efecto: compara pin, polaridad y referencia de masa; desenergiza antes de corregir.
 - Lecturas inesperadas: distingue ruido, entrada flotante, rango, sensor e interpretación; no conviertas un error en valor válido silenciosamente.
 - Reinicios al añadir una carga: revisa presupuesto de fuente y etapa de potencia. El GPIO ordena, no alimenta motores.

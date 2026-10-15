@@ -1,21 +1,25 @@
-# Soluciones razonadas del laboratorio 06
+# Soluciones desarrolladas de la Unidad 06
 
-[Volver al laboratorio](LABORATORIO.md)
+[Laboratorio](LABORATORIO.md) · [Explicación paso a paso](DESARROLLO.md) · [Unidad](README.md)
 
-1.127 por truncamiento.
-2. Uno R3 no ofrece PWM hardware en D8.
-3. La percepción y el LED no garantizan linealidad.
+Intenta primero los ejercicios del laboratorio. Compara el razonamiento y las condiciones, además del resultado.
 
-## Criterio para avanzar
+## 1. Conversión de 512
 
-Duty 0..255; brillo cambia. Reducción a 128 limita ciclo de trabajo máximo.
+`512 × 255 = 130560`. Dividido entre 1023 da 127 con división entera. El cálculo del sketch se realiza en 32 bits antes de convertir a byte.
 
-El resultado esperado debe compararse con tu evidencia. Una solución escrita no sustituye la observación del montaje; las pruebas de escritorio validan reglas de software y los resultados eléctricos requieren placa/componentes.
+## 2. Por qué D8 cambia la práctica
 
-## Entrega mínima
+D8 no tiene PWM por hardware en el Uno R3. Un programa puede aceptar el pin sin producir una regulación equivalente. Verifica función, placa y temporizadores, no solamente que compile.
 
-Incluye montaje y referencias, versión de core/bibliotecas, cambio exacto, entrada, esperado, observado y explicación. Para señales periódicas mide al menos varios eventos; para sensores indica fuente, unidad y condiciones de medición. Si utilizaste un pulsador para representar un sensor, decláralo.
+## 3. Media escala y brillo
 
-## Límite que debes explicar
+PWM describe tiempo de activación. El LED y la percepción visual introducen otras relaciones. 128 no garantiza exactamente la mitad del brillo percibido ni la mitad de velocidad de un motor.
 
-No alimentes motor desde este pin; necesita driver de Unidad 16.
+## Solución de la limitación
+
+El `if` del desarrollo conserva 0..128 y recorta todo valor superior. Para ADC 1023 la función calcula inicialmente 255 y el recorte deja 128. Para ADC 512 calcula 127 y no cambia. Una escala proporcional a 128 daría aproximadamente 64 en el centro: son decisiones diferentes.
+
+## Evidencia de tu práctica
+
+Conserva predicción, cambio exacto y resultado observado en [EVIDENCIAS.md](../docs/EVIDENCIAS.md). Distingue cálculo, prueba de software y montaje físico. Una respuesta correcta en papel no sustituye una comprobación eléctrica.

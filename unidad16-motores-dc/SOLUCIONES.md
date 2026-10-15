@@ -1,21 +1,25 @@
-# Soluciones razonadas del laboratorio 16
+# Soluciones desarrolladas de la Unidad 16
 
-[Volver al laboratorio](LABORATORIO.md)
+[Laboratorio](LABORATORIO.md) · [Explicación paso a paso](DESARROLLO.md) · [Unidad](README.md)
 
-1. No: depende de carga, motor y pérdidas.
-2. Mantiene deshabilitación durante reset antes de setup.
-3. Tensión, corriente continua, arranque/bloqueo y térmica, según ficha.
+Intenta primero los ejercicios del laboratorio. Compara el razonamiento y las condiciones, además del resultado.
 
-## Criterio para avanzar
+## 1. PWM 128
 
-Arranque deshabilitado; f/r activan PWM 128; timeout 5 s apaga driver. El programa rechaza nueva dirección mientras activo.
+Es un comando de ciclo de trabajo cercano a media escala, no una medición de velocidad. La velocidad depende de tensión, carga, pérdidas y motor. Sin realimentación no se garantiza una proporción exacta.
 
-El resultado esperado debe compararse con tu evidencia. Una solución escrita no sustituye la observación del montaje; las pruebas de escritorio validan reglas de software y los resultados eléctricos requieren placa/componentes.
+## 2. Pull-down en STBY
 
-## Entrega mínima
+Define deshabilitación cuando el pin del Uno está en alta impedancia durante arranque o reinicio. El software todavía no ha ejecutado `parar` en ese momento. Verifica si el carrier ya lo incorpora.
 
-Incluye montaje y referencias, versión de core/bibliotecas, cambio exacto, entrada, esperado, observado y explicación. Para señales periódicas mide al menos varios eventos; para sensores indica fuente, unidad y condiciones de medición. Si utilizaste un pulsador para representar un sensor, decláralo.
+## 3. Elegir fuente y driver
 
-## Límite que debes explicar
+Considera tensión nominal, arranque, bloqueo, disipación y condiciones continuas del conjunto. El máximo de un anuncio comercial no es una garantía de operación permanente.
 
-No conectar red doméstica. El ejemplo no implementa realimentación ni freno certificado.
+## Caso de inversión
+
+Enviar r mientras activo produce rechazo. Después de 0 la variable permite otra marcha, pero la mecánica puede seguir girando. La referencia depende de que el operador espere parada real; no implementa un enclavamiento con sensor ni frenado verificado.
+
+## Evidencia de tu práctica
+
+Conserva predicción, cambio exacto y resultado observado en [EVIDENCIAS.md](../docs/EVIDENCIAS.md). Distingue cálculo, prueba de software y montaje físico. Una respuesta correcta en papel no sustituye una comprobación eléctrica.

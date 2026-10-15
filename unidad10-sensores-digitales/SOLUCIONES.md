@@ -1,21 +1,25 @@
-# Soluciones razonadas del laboratorio 10
+# Soluciones desarrolladas de la Unidad 10
 
-[Volver al laboratorio](LABORATORIO.md)
+[Laboratorio](LABORATORIO.md) · [Explicación paso a paso](DESARROLLO.md) · [Unidad](README.md)
 
-1. No: solo continuidad del contacto.
-2. Prueba lógica, no sensor magnético.
-3. Se necesita diseño de supervisión eléctrica adicional.
+Intenta primero los ejercicios del laboratorio. Compara el razonamiento y las condiciones, además del resultado.
 
-## Criterio para avanzar
+## 1. ¿Detecta quién abrió?
 
-Contacto abierto muestra LED ON; cerrado OFF, tras 30 ms estables.
+No. El contacto informa un cambio eléctrico; no incorpora identificación de personas. Tampoco mide distancia exacta al imán. La interpretación depende del componente y de cómo se instaló.
 
-El resultado esperado debe compararse con tu evidencia. Una solución escrita no sustituye la observación del montaje; las pruebas de escritorio validan reglas de software y los resultados eléctricos requieren placa/componentes.
+## 2. Sustituir por un botón
 
-## Entrega mínima
+Permite comprobar niveles, estabilización y salida. No comprueba características magnéticas del reed. La evidencia debe nombrar qué componente se usó.
 
-Incluye montaje y referencias, versión de core/bibliotecas, cambio exacto, entrada, esperado, observado y explicación. Para señales periódicas mide al menos varios eventos; para sensores indica fuente, unidad y condiciones de medición. Si utilizaste un pulsador para representar un sensor, decláralo.
+## 3. Detectar cable cortado
 
-## Límite que debes explicar
+Este circuito de dos estados no distingue abierto intencional de interrupción del cable. Hace falta diseñar una supervisión adicional y probarla. No basta añadir una condición que vuelva a leer el mismo nivel.
 
-No conectes salida de un módulo activo sin comprobar niveles; esta referencia es contacto seco.
+## Caso de arranque
+
+Si el contacto comienza abierto, `estadoAnterior` y `estable` valen true; no hay mensaje de cambio. El LED sí refleja HIGH al recorrer loop. Es coherente con un registro de transiciones, aunque un sistema que necesite estado inicial debería añadir ese requisito.
+
+## Evidencia de tu práctica
+
+Conserva predicción, cambio exacto y resultado observado en [EVIDENCIAS.md](../docs/EVIDENCIAS.md). Distingue cálculo, prueba de software y montaje físico. Una respuesta correcta en papel no sustituye una comprobación eléctrica.

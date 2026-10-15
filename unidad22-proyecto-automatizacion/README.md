@@ -1,5 +1,7 @@
 # Unidad 22 — Proyecto: sistema automatizado
 
+**[Desarrollo paso a paso: Automatizar una luz con modo y dos fronteras](DESARROLLO.md)**. Sigue el recorrido del código, las tablas y los experimentos antes de resolver la práctica.
+
 [Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/arduino/)
 
 ## Propósito

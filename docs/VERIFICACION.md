@@ -1,4 +1,4 @@
-# Verificación de Arduino 1.1
+# Verificación de Arduino 1.2
 
 ## Comprobaciones reproducibles
 
@@ -18,7 +18,15 @@ python scripts/compilar.py
 
 El verificador controla catálogo, enlaces locales, nombres de carpetas Arduino y que headers copiados coincidan con las reglas probadas. Las pruebas nativas utilizan compilador C++ de escritorio (`g++` o `clang++`); no requieren placa, pero sí ese compilador.
 
-## Estado (2026-10-13)
+## Ampliación didáctica 1.2 (2026-10-14, America/Bogota)
+
+- Los 26 programas se recompilaron correctamente para `arduino:avr:uno` con Arduino CLI 1.2.2, AVR 1.8.6, Servo 1.3.0 y LiquidCrystal 1.0.7. Los sketches y headers no se modificaron en esta ampliación.
+- Se ejecutaron de nuevo los 26 casos lógicos de escritorio; todos aprobados.
+- Se comprobaron enlaces locales de todo el material, acceso a los 24 desarrollos desde unidades/laboratorios y estructura XML de los 20 esquemas SVG.
+- Los 20 SVG se renderizaron y revisaron visualmente para detectar recortes y superposiciones. Se contrastaron sus etiquetas con los programas y tablas de conexiones. No representan una simulación eléctrica ni un montaje físico probado.
+- Las tablas numéricas se contrastaron con las reglas: periodo completo, ADC/porcentaje, PWM, filtro, conversión TMP36, distancia e histéresis. Las predicciones temporales se identifican como nominales, no como mediciones físicas.
+
+## Registro anterior (2026-10-13)
 
 - **26 programas compilados correctamente** para `arduino:avr:uno`, core AVR 1.8.6, Servo 1.3.0 y LiquidCrystal 1.0.7, mediante Arduino CLI 1.5.1.
 - **26 casos lógicos aprobados**: extremos ADC/PWM, conversión TMP36, valores inválidos, distancia/timeout, histéresis, pulsación estabilizada, desbordamiento de millis y validación de tramas.

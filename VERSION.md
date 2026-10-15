@@ -1,3 +1,15 @@
+# Versión 1.2: desarrollo didáctico y conexiones visuales
+
+Fecha: 2026-10-14 (America/Bogota).
+
+Las 24 unidades incorporan un desarrollo específico de sus programas, con progresión conceptual, tablas de seguimiento, interpretación de tipos y unidades, experimentos y diagnóstico. Se reescriben las 24 soluciones para explicar causas, fronteras y alcance, y se incorporan 20 esquemas SVG de conexiones funcionales enlazados desde 22 unidades. Las unidades 00 y 02 usan únicamente placa/USB.
+
+El recorrido aclara especialmente periodo de transición frente a ciclo completo, código ADC frente a magnitud física, señal frente a potencia, evento frente a nivel, histéresis frente a filtrado y lectura plausible frente a sensor comprobado. Los proyectos describen sus políticas reales de error y silenciamiento.
+
+Se conservan los 26 sketches y las reglas compartidas. Los ejemplos de modificación se realizan en copias; no se declara ampliado el hardware del integrador. Las comprobaciones y sus límites están en [VERIFICACION.md](docs/VERIFICACION.md).
+
+---
+
 # Versión 1.1: prácticas reproducibles
 
 Fecha: 2026-10-13.

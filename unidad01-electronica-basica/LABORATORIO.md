@@ -1,6 +1,16 @@
 # Laboratorio 01: Ley de Ohm aplicada a un LED
 
+**[Desarrollo paso a paso: Comprender un circuito antes de conectarlo](DESARROLLO.md)**. Sigue el recorrido del código, las tablas y los experimentos antes de resolver la práctica.
+
 [Unidad](README.md) · [Entorno](../docs/ENTORNO.md) · [Conexiones de referencia](../docs/CONEXIONES.md)
+
+
+## Esquema de conexiones
+
+Estos esquemas muestran terminales y recorridos eléctricos, no posiciones de una protoboard ni orientaciones universales de componentes. Contrasta las etiquetas con tu pieza y con [la tabla de conexiones](../docs/CONEXIONES.md).
+
+![Una salida con LED](../docs/esquemas/led.svg)
+
 
 ## Objetivo y materiales
 
@@ -17,7 +27,7 @@ Los números D/A corresponden a etiquetas de la tarjeta, no a patillas del chip.
 3. Abre uno de los programas completos: [ley_ohm](ejemplos/ley_ohm/ley_ohm.ino). El archivo `.ino` y su carpeta tienen el mismo nombre; los `.h` adyacentes forman parte de ese programa.
 4. Selecciona Uno y puerto, compila y lee los mensajes del IDE. Una compilación fallida no se corrige cambiando un cable.
 5. Carga por USB y abre monitor a **115200 baud**. En prácticas de potencia conserva la fuente dedicada según el diseño de conexiones.
-6. Ejecuta ley_ohm. Calcula a mano con 5 V y caída LE D2 V. Después monta el circuito desenergizado; usa el sketch de Unidad 03 para encender su LED rojo en D8.
+6. Ejecuta ley_ohm. Calcula a mano con 5 V y caída LED de 2 V. Después monta el circuito desenergizado; usa el sketch de Unidad 03 para encender su LED rojo en D8.
 7. Registra resultado antes de modificar una sola condición. Vuelve al programa original tras experimentar.
 
 ## Resultado esperado
@@ -42,7 +52,7 @@ Intenta predecir antes de ejecutar y consulta [SOLUCIONES.md](SOLUCIONES.md) des
 
 ## Diagnóstico de la práctica
 
-- Sin mensajes: comprueba cable de datos, puerto, velocidad y RESET antes deañadir periféricos.
+- Sin mensajes: comprueba cable de datos, puerto, velocidad y RESET antes de añadir periféricos.
 - Programa cargado sin efecto: compara pin, polaridad y referencia de masa; desenergiza antes de corregir.
 - Lecturas inesperadas: distingue ruido, entrada flotante, rango, sensor e interpretación; no conviertas un error en valor válido silenciosamente.
 - Reinicios al añadir una carga: revisa presupuesto de fuente y etapa de potencia. El GPIO ordena, no alimenta motores.

@@ -1,21 +1,25 @@
-# Soluciones razonadas del laboratorio 01
+# Soluciones desarrolladas de la Unidad 01
 
-[Volver al laboratorio](LABORATORIO.md)
+[Laboratorio](LABORATORIO.md) · [Explicación paso a paso](DESARROLLO.md) · [Unidad](README.md)
 
-1. I≈6.38m A y P≈0.0191 W.
-2. Necesita limitar corriente según componente y GPIO.
-3. No: calcula un modelo con valores fijados.
+Intenta primero los ejercicios del laboratorio. Compara el razonamiento y las condiciones, además del resultado.
 
-## Criterio para avanzar
+## 1. Resistencia de 470 Ω
 
-Modelo:9.09m A y 0.0275 W aproximadamente. Tu medición real puede diferir.
+La tensión de la resistencia es 3 V. Entonces `I = 3 / 470 = 0.006383 A`, equivalente a 6.38 mA. `P = I² × 470 ≈ 0.0191 W`. No mezcles miliamperios con amperios al elevar al cuadrado.
 
-El resultado esperado debe compararse con tu evidencia. Una solución escrita no sustituye la observación del montaje; las pruebas de escritorio validan reglas de software y los resultados eléctricos requieren placa/componentes.
+## 2. LED sin resistencia
 
-## Entrega mínima
+La relación corriente/tensión del LED no limita por sí sola la corriente a un valor adecuado. Una resistencia permite dimensionar cada rama. Dos LED en paralelo con una única resistencia no garantizan el mismo reparto de corriente.
 
-Incluye montaje y referencias, versión de core/bibliotecas, cambio exacto, entrada, esperado, observado y explicación. Para señales periódicas mide al menos varios eventos; para sensores indica fuente, unidad y condiciones de medición. Si utilizaste un pulsador para representar un sensor, decláralo.
+## 3. ¿Es una medición?
 
-## Límite que debes explicar
+No: el programa calcula a partir de constantes. Para demostrarlo, cambia la resistencia del modelo sin tocar hardware. Cambiará lo impreso aunque la placa no tenga un LED externo conectado.
 
-Para medir corriente usa multímetro apropiadamente; no conectes su modo amperímetro entre 5 V y GND.
+## Solución del contraste
+
+Pasar de 330 a 470 Ω reduce la corriente del modelo de 9.09 a 6.38 mA. La dirección del cambio es predecible; una relación exacta con brillo exige caracterizar el LED y la percepción. Una salida impresa con muchos decimales sigue siendo un cálculo con supuestos.
+
+## Evidencia de tu práctica
+
+Conserva predicción, cambio exacto y resultado observado en [EVIDENCIAS.md](../docs/EVIDENCIAS.md). Distingue cálculo, prueba de software y montaje físico. Una respuesta correcta en papel no sustituye una comprobación eléctrica.

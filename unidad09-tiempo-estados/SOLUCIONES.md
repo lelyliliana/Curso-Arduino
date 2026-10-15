@@ -1,21 +1,25 @@
-# Soluciones razonadas del laboratorio 09
+# Soluciones desarrolladas de la Unidad 09
 
-[Volver al laboratorio](LABORATORIO.md)
+[Laboratorio](LABORATORIO.md) · [Explicación paso a paso](DESARROLLO.md) · [Unidad](README.md)
 
-1. Evita reiniciar el periodo de la otra.
-2. No: un loop cooperativo.
-3. Registra timestamps y compara diferencia real con periodo nominal.
+Intenta primero los ejercicios del laboratorio. Compara el razonamiento y las condiciones, además del resultado.
 
-## Criterio para avanzar
+## 1. Marcas independientes
 
-LED alterna cada 500 ms; muestras cada 200 ms aproximadamente. Con delay largo se retrasan ambas.
+`relojLed` describe la última inversión y `relojSensor` la última adquisición. Si el sensor actualizara la marca del LED cada 200 ms, podría impedir que el LED alcanzara sus 500 ms de espera.
 
-El resultado esperado debe compararse con tu evidencia. Una solución escrita no sustituye la observación del montaje; las pruebas de escritorio validan reglas de software y los resultados eléctricos requieren placa/componentes.
+## 2. ¿Hay paralelismo?
 
-## Entrega mínima
+No: el procesador recorre un programa cooperativo. Las tareas se alternan rápidamente. Una operación bloqueante dentro de una afecta cuándo pueden atenderse las demás.
 
-Incluye montaje y referencias, versión de core/bibliotecas, cambio exacto, entrada, esperado, observado y explicación. Para señales periódicas mide al menos varios eventos; para sensores indica fuente, unidad y condiciones de medición. Si utilizaste un pulsador para representar un sensor, decláralo.
+## 3. Medir retraso
 
-## Límite que debes explicar
+Guarda tiempos observados consecutivos y resta. Compara con 200 ms nominales para el sensor. Distingue frecuencia de muestreo, tiempo de ejecución y error de observación del monitor.
 
-No garantiza tiempo real estricto; Serial también consume tiempo.
+## Tercera tarea
+
+A 3000 ms nominales coinciden periodos de 200, 500 y 1500 ms. Con tres `if` separados pueden ejecutarse los tres. Cada tarea requiere su propia marca. Añadir una pausa de un segundo produciría retraso y pérdida de oportunidades de muestreo; no un registro del pasado.
+
+## Evidencia de tu práctica
+
+Conserva predicción, cambio exacto y resultado observado en [EVIDENCIAS.md](../docs/EVIDENCIAS.md). Distingue cálculo, prueba de software y montaje físico. Una respuesta correcta en papel no sustituye una comprobación eléctrica.

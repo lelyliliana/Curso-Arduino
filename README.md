@@ -6,7 +6,7 @@ Puedes leer las lecciones aquí sin conocer GitHub. Al terminar cada unidad, usa
 
 [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/arduino/)
 
-**Versión 1.1 (laboratorios de referencia)**
+**Versión 1.2 (desarrollo didáctico y esquemas de conexiones)**
 
 Curso abierto para aprender **electrónica, programación y prototipado con Arduino** mediante prácticas progresivas y proyectos.
 
@@ -14,7 +14,21 @@ La ruta comienza con seguridad, electricidad básica y preparación del entorno,
 
 ## Comenzar con un montaje reproducible
 
-Consulta el [entorno fijado](docs/ENTORNO.md), las [tablas de conexiones](docs/CONEXIONES.md) y los [24 laboratorios con 26 programas completos](laboratorios/README.md). Cada unidad enlaza su práctica ysoluciones. Revisa [qué se verificó](docs/VERIFICACION.md) y registra tus resultados físicos.
+Consulta el [entorno fijado](docs/ENTORNO.md), las [tablas de conexiones](docs/CONEXIONES.md) y los [24 laboratorios con 26 programas completos](laboratorios/README.md). Cada unidad enlaza su práctica y soluciones. Revisa [qué se verificó](docs/VERIFICACION.md) y registra tus resultados físicos.
+
+## Cómo estudiar cada unidad
+
+Sigue un paso cada vez. Abre el **Desarrollo paso a paso** enlazado al comienzo de la unidad: explica el programa completo, deriva los cálculos y sigue estados y tiempos con tablas. Después realiza el laboratorio y consulta las soluciones cuando hayas intentado los ejercicios.
+
+1. Comprende la pregunta y predice un resultado pequeño.
+2. Identifica terminales en el [atlas de 20 esquemas](docs/ATLAS_CONEXIONES.md) y en la tabla correspondiente.
+3. Sigue el código completo con la explicación; distingue entrada, decisión y salida.
+4. Ejecuta la referencia y cambia una sola condición.
+5. Contrasta tu razonamiento con las soluciones y conserva la evidencia.
+
+Las unidades 00 y 02 usan solo placa y USB; no necesitan cableado externo. Los esquemas de las demás prácticas son funcionales, no fotografías de protoboard. Los programas de referencia conservan su comportamiento; las modificaciones del desarrollo son experimentos en una copia.
+
+Consulta las [fuentes técnicas](docs/FUENTES_TECNICAS.md) para ampliar funciones, interfaces y características de la placa.
 
 ## Objetivo
 

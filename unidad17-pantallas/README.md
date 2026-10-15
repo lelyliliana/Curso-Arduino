@@ -1,5 +1,7 @@
 # Unidad 17 — Pantallas y visualización local
 
+**[Desarrollo paso a paso: Mostrar un dato sin perder la conexión de la pantalla](DESARROLLO.md)**. Sigue el recorrido del código, las tablas y los experimentos antes de resolver la práctica.
+
 [Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/arduino/)
 
 ## Qué aprenderás

@@ -1,21 +1,25 @@
-# Soluciones razonadas del laboratorio 05
+# Soluciones desarrolladas de la Unidad 05
 
-[Volver al laboratorio](LABORATORIO.md)
+[Laboratorio](LABORATORIO.md) · [Explicación paso a paso](DESARROLLO.md) · [Unidad](README.md)
 
-1.1024 niveles, valores 0..1023.
-2.50 con división entera del ejemplo.
-3. Puede variar sin significado físico fiable.
+Intenta primero los ejercicios del laboratorio. Compara el razonamiento y las condiciones, además del resultado.
 
-## Criterio para avanzar
+## 1. Niveles y valor máximo
 
-ADC0..1023 aproximadamente y porcentaje 0..100.
+Hay 1024 códigos y el mayor es 1023 porque se comienza a contar en cero. Confundir cantidad con último índice conduce a errores de escala.
 
-El resultado esperado debe compararse con tu evidencia. Una solución escrita no sustituye la observación del montaje; las pruebas de escritorio validan reglas de software y los resultados eléctricos requieren placa/componentes.
+## 2. Lectura 512
 
-## Entrega mínima
+`512 × 100 / 1023 = 50.048...`; con división entera se muestra 50. El sufijo L permite calcular el producto sin el desbordamiento de un int AVR.
 
-Incluye montaje y referencias, versión de core/bibliotecas, cambio exacto, entrada, esperado, observado y explicación. Para señales periódicas mide al menos varios eventos; para sensores indica fuente, unidad y condiciones de medición. Si utilizaste un pulsador para representar un sensor, decláralo.
+## 3. Cursor desconectado
 
-## Límite que debes explicar
+La entrada puede quedar flotante y recoger acoplamientos o carga residual. Un número aparentemente razonable no certifica posición. Desenergiza y revisa continuidad y referencia común.
 
-No es un voltímetro calibrado ni mide resistencia del potenciómetro directamente.
+## Solución con decimal
+
+`Serial.println(raw * 100.0f / 1023.0f, 1);` muestra aproximadamente 50.0 para raw 512. La modificación cambia presentación y aritmética; no aumenta los 10 bits de resolución del convertidor. Registra por separado el código ADC y el porcentaje para conservar trazabilidad.
+
+## Evidencia de tu práctica
+
+Conserva predicción, cambio exacto y resultado observado en [EVIDENCIAS.md](../docs/EVIDENCIAS.md). Distingue cálculo, prueba de software y montaje físico. Una respuesta correcta en papel no sustituye una comprobación eléctrica.

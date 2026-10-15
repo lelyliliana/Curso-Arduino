@@ -1,21 +1,25 @@
-# Soluciones razonadas del laboratorio 22
+# Soluciones desarrolladas de la Unidad 22
 
-[Volver al laboratorio](LABORATORIO.md)
+[Laboratorio](LABORATORIO.md) · [Explicación paso a paso](DESARROLLO.md) · [Unidad](README.md)
 
-1. Conserva ON.
-2. Conserva OFF.
-3. No alterna repetidamente; solo un evento estable.
+Intenta primero los ejercicios del laboratorio. Compara el razonamiento y las condiciones, además del resultado.
 
-## Criterio para avanzar
+## 1. ADC 500 después de oscuridad
 
-En modo AUTO, cambia según histéresis; deshabilitado mantiene LED apagado.
+La inversión da 523. Si oscuro ya era true, se conserva porque 523 es mayor que 423. Con modo habilitado se aplica PWM 128.
 
-El resultado esperado debe compararse con tu evidencia. Una solución escrita no sustituye la observación del montaje; las pruebas de escritorio validan reglas de software y los resultados eléctricos requieren placa/componentes.
+## 2. ADC 500 después de luz
 
-## Entrega mínima
+Si oscuro era false, 523 no alcanza 623 y permanece false. El mismo dato puede conservar un estado distinto según la historia; esa es la función de la banda.
 
-Incluye montaje y referencias, versión de core/bibliotecas, cambio exacto, entrada, esperado, observado y explicación. Para señales periódicas mide al menos varios eventos; para sensores indica fuente, unidad y condiciones de medición. Si utilizaste un pulsador para representar un sensor, decláralo.
+## 3. Botón mantenido
 
-## Límite que debes explicar
+Una pulsación estable cambia el modo una sola vez. Para otra conmutación hace falta liberar estable y pulsar nuevamente. Deshabilitado mantiene PWM cero, aunque el sensor continúe actualizando oscuro.
 
-Umbrales requieren caracterización de tu LDR. No usa relé ni detecta todos los fallos eléctricos.
+## Fronteras exactas
+
+raw 400 activa si estaba apagado. raw 600 libera si estaba encendido. Con raw entre 401 y 599 conserva la condición previa. Al rehabilitar se espera la próxima muestra para representar el resultado; no se supone encendido instantáneo.
+
+## Evidencia de tu práctica
+
+Conserva predicción, cambio exacto y resultado observado en [EVIDENCIAS.md](../docs/EVIDENCIAS.md). Distingue cálculo, prueba de software y montaje físico. Una respuesta correcta en papel no sustituye una comprobación eléctrica.

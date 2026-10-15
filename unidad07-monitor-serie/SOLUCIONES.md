@@ -1,21 +1,25 @@
-# Soluciones razonadas del laboratorio 07
+# Soluciones desarrolladas de la Unidad 07
 
-[Volver al laboratorio](LABORATORIO.md)
+[Laboratorio](LABORATORIO.md) · [Explicación paso a paso](DESARROLLO.md) · [Unidad](README.md)
 
-1. No: se procesan dos comandos, ON y OFF.
-2. Es estado software; observa montaje.
-3. Añade un caso que imprima uso sin modificar salida.
+Intenta primero los ejercicios del laboratorio. Compara el razonamiento y las condiciones, además del resultado.
 
-## Criterio para avanzar
+## 1. Enviar 10
 
-1 enciende,0 apaga,?informa; x rechaza sin cambiar salida.
+No solicita una magnitud diez. La primera vuelta con datos procesa `'1'` y enciende; otra procesa `'0'` y apaga. El resultado final es OFF. Para números completos hace falta definir una trama.
 
-El resultado esperado debe compararse con tu evidencia. Una solución escrita no sustituye la observación del montaje; las pruebas de escritorio validan reglas de software y los resultados eléctricos requieren placa/componentes.
+## 2. Consulta del estado
 
-## Entrega mínima
+La respuesta ON del comando 1 anuncia la orden enviada al pin. La consulta ? lee además su nivel lógico, pero tampoco mide brillo ni corriente. Contrasta con el LED y el esquema cuando investigues una discrepancia.
 
-Incluye montaje y referencias, versión de core/bibliotecas, cambio exacto, entrada, esperado, observado y explicación. Para señales periódicas mide al menos varios eventos; para sensores indica fuente, unidad y condiciones de medición. Si utilizaste un pulsador para representar un sensor, decláralo.
+## 3. Comando de ayuda
 
-## Límite que debes explicar
+Una rama `else if (c == 'h')` puede imprimir `1=ON, 0=OFF, ?=estado`. Colócala antes de la rama que rechaza cualquier otro carácter. No añadas `digitalWrite` en esa rama. Prueba h con el LED previamente encendido y apagado.
 
-Interfaz local de caracteres, no protocolo autenticado ni parser de números.
+## Comprobación de rechazo
+
+La secuencia `1?x?0?` debe terminar OFF y conservar ON durante el rechazo de x. Un rechazo que apaga automáticamente la salida sería otra política; no corresponde al contrato de este programa.
+
+## Evidencia de tu práctica
+
+Conserva predicción, cambio exacto y resultado observado en [EVIDENCIAS.md](../docs/EVIDENCIAS.md). Distingue cálculo, prueba de software y montaje físico. Una respuesta correcta en papel no sustituye una comprobación eléctrica.

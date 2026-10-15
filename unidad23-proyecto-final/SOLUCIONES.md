@@ -1,21 +1,25 @@
-# Soluciones razonadas del laboratorio 23
+# Soluciones desarrolladas de la Unidad 23
 
-[Volver al laboratorio](LABORATORIO.md)
+[Laboratorio](LABORATORIO.md) · [Explicación paso a paso](DESARROLLO.md) · [Unidad](README.md)
 
-1. No: cambia autorización local; alerta conserva su significado.
-2. No: una entrada flotante puede coincidir con rango.
-3. Driver, fuente, protecciones, realimentación y pruebas del montaje antes de ampliar.
+Intenta primero los ejercicios del laboratorio. Compara el razonamiento y las condiciones, además del resultado.
 
-## Criterio para avanzar
+## 1. Silenciar no elimina la alerta
 
-Alerta con histéresis, LED y tono breve; botónsilencia salidas. Un dato inválido apaga salidas y reporta error.
+Cambia habilitado, que gobierna la representación. La temperatura se sigue adquiriendo y alerta conserva la lógica de histéresis. Al rehabilitar, la próxima muestra puede volver a activar salidas si la condición continúa.
 
-El resultado esperado debe compararse con tu evidencia. Una solución escrita no sustituye la observación del montaje; las pruebas de escritorio validan reglas de software y los resultados eléctricos requieren placa/componentes.
+## 2. Sensor desconectado
 
-## Entrega mínima
+Puede producir una cuenta plausible. El rango de la función no equivale a detección confiable de desconexión. Una prueba de dato inválido debe identificar cómo se produjo y qué parte verificó.
 
-Incluye montaje y referencias, versión de core/bibliotecas, cambio exacto, entrada, esperado, observado y explicación. Para señales periódicas mide al menos varios eventos; para sensores indica fuente, unidad y condiciones de medición. Si utilizaste un pulsador para representar un sensor, decláralo.
+## 3. Añadir potencia
 
-## Límite que debes explicar
+Requiere driver, fuente, protecciones, montaje y pruebas adecuados, además de la decisión de control. El GPIO del integrador no alimenta motores ni cargas de red.
 
-Integrador educativo local. No es dispositivo de seguridad industrial ni demuestra precisión médica/ambiental certificada.
+## Resolución del recorrido
+
+Desde alerta OFF y habilitado: 29→sin alerta; 30→LED y tono; 29→continúa alerta; pulsación→silencio inmediato de salidas; otra pulsación→permite actuar en próxima muestra; 28→libera alerta. Un dato inválido reinicia alerta y apaga las salidas. A diferencia del monitoreo anterior, el LED no se utiliza aquí para indicar fallo.
+
+## Evidencia de tu práctica
+
+Conserva predicción, cambio exacto y resultado observado en [EVIDENCIAS.md](../docs/EVIDENCIAS.md). Distingue cálculo, prueba de software y montaje físico. Una respuesta correcta en papel no sustituye una comprobación eléctrica.

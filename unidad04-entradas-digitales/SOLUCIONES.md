@@ -1,21 +1,25 @@
-# Soluciones razonadas del laboratorio 04
+# Soluciones desarrolladas de la Unidad 04
 
-[Volver al laboratorio](LABORATORIO.md)
+[Laboratorio](LABORATORIO.md) · [Explicación paso a paso](DESARROLLO.md) · [Unidad](README.md)
 
-1. Contacto cerrado a GND.
-2. Detendría otras tareas y puede perder eventos.
-3. Se descarta si no dura la estabilización requerida.
+Intenta primero los ejercicios del laboratorio. Compara el razonamiento y las condiciones, además del resultado.
 
-## Criterio para avanzar
+## 1. LOW al pulsar
 
-Una pulsación estable alterna una sola vez; mantener no repite cambios.
+El contacto conecta D2 con GND. `INPUT_PULLUP` explica HIGH al soltar, sin resistencia externa en este circuito. Cambiar a INPUT sin añadir otra polarización deja de conservar ese contrato.
 
-El resultado esperado debe compararse con tu evidencia. Una solución escrita no sustituye la observación del montaje; las pruebas de escritorio validan reglas de software y los resultados eléctricos requieren placa/componentes.
+## 2. Por qué evitar una espera larga
 
-## Entrega mínima
+Una pausa impide atender otras tareas durante ese tiempo. Además, esperar una cantidad fija después de la primera lectura no demuestra que la entrada no rebotó. La referencia recuerda el último cambio y exige estabilidad continuada.
 
-Incluye montaje y referencias, versión de core/bibliotecas, cambio exacto, entrada, esperado, observado y explicación. Para señales periódicas mide al menos varios eventos; para sensores indica fuente, unidad y condiciones de medición. Si utilizaste un pulsador para representar un sensor, decláralo.
+## 3. Pulsación muy corta
 
-## Límite que debes explicar
+Si LOW no se sostiene durante los 30 ms exigidos, no se acepta como estado estable. No se anuncia como evento perdido por accidente: está fuera de la duración mínima de esta referencia.
 
-30 ms es una elección de laboratorio; verifica el pulsador y no confundir evento con nivel sostenido.
+## Resultado de mantener
+
+Tras confirmar la primera pulsación, `estable` y `crudo` son LOW. Ya no hay un cambio pendiente que aceptar, así que no se invierte otra vez el LED. La liberación estable prepara la siguiente pulsación; no la cuenta como pulsación adicional.
+
+## Evidencia de tu práctica
+
+Conserva predicción, cambio exacto y resultado observado en [EVIDENCIAS.md](../docs/EVIDENCIAS.md). Distingue cálculo, prueba de software y montaje físico. Una respuesta correcta en papel no sustituye una comprobación eléctrica.

@@ -1,6 +1,18 @@
 # Laboratorio 19: Buses I2C y SPI por separado
 
+**[Desarrollo paso a paso: Comprender qué demuestran I2C y SPI](DESARROLLO.md)**. Sigue el recorrido del código, las tablas y los experimentos antes de resolver la práctica.
+
 [Unidad](README.md) · [Entorno](../docs/ENTORNO.md) · [Conexiones de referencia](../docs/CONEXIONES.md)
+
+
+## Esquema de conexiones
+
+Estos esquemas muestran terminales y recorridos eléctricos, no posiciones de una protoboard ni orientaciones universales de componentes. Contrasta las etiquetas con tu pieza y con [la tabla de conexiones](../docs/CONEXIONES.md).
+
+![I2C con periférico conocido compatible 5 V](../docs/esquemas/i2c.svg)
+
+![SPI loopback: salida conectada a entrada](../docs/esquemas/spi.svg)
+
 
 ## Objetivo y materiales
 
@@ -17,7 +29,7 @@ Los números D/A corresponden a etiquetas de la tarjeta, no a patillas del chip.
 3. Abre uno de los programas completos: [i2c_escaner](ejemplos/i2c_escaner/i2c_escaner.ino) · [spi_loopback](ejemplos/spi_loopback/spi_loopback.ino). El archivo `.ino` y su carpeta tienen el mismo nombre; los `.h` adyacentes forman parte de ese programa.
 4. Selecciona Uno y puerto, compila y lee los mensajes del IDE. Una compilación fallida no se corrige cambiando un cable.
 5. Carga por USB y abre monitor a **115200 baud**. En prácticas de potencia conserva la fuente dedicada según el diseño de conexiones.
-6. Carga i 2c_escaner y observa ACK. Desenergiza, retira I2C y conecta puente SPI; carga spi_loopback.
+6. Carga i2c_escaner y observa ACK. Desenergiza, retira I2C y conecta puente SPI; carga spi_loopback.
 7. Registra resultado antes de modificar una sola condición. Vuelve al programa original tras experimentar.
 
 ## Resultado esperado
@@ -42,7 +54,7 @@ Intenta predecir antes de ejecutar y consulta [SOLUCIONES.md](SOLUCIONES.md) des
 
 ## Diagnóstico de la práctica
 
-- Sin mensajes: comprueba cable de datos, puerto, velocidad y RESET antes deañadir periféricos.
+- Sin mensajes: comprueba cable de datos, puerto, velocidad y RESET antes de añadir periféricos.
 - Programa cargado sin efecto: compara pin, polaridad y referencia de masa; desenergiza antes de corregir.
 - Lecturas inesperadas: distingue ruido, entrada flotante, rango, sensor e interpretación; no conviertas un error en valor válido silenciosamente.
 - Reinicios al añadir una carga: revisa presupuesto de fuente y etapa de potencia. El GPIO ordena, no alimenta motores.

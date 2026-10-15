@@ -1,5 +1,7 @@
 # Unidad 02 — Conoce Arduino y tu primer programa
 
+**[Desarrollo paso a paso: Del primer encendido a una secuencia temporal](DESARROLLO.md)**. Sigue el recorrido del código, las tablas y los experimentos antes de resolver la práctica.
+
 [Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/arduino/)
 
 ## Qué aprenderás

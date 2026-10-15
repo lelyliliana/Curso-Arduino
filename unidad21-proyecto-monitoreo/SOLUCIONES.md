@@ -1,21 +1,25 @@
-# Soluciones razonadas del laboratorio 21
+# Soluciones desarrolladas de la Unidad 21
 
-[Volver al laboratorio](LABORATORIO.md)
+[Laboratorio](LABORATORIO.md) · [Explicación paso a paso](DESARROLLO.md) · [Unidad](README.md)
 
-1. OFF, ON, ON, OFF.
-2. La lógica y límites, no el sensor físico.
-3. Mensaje ERROR y estado explícito; no conservar valor viejo comoactual.
+Intenta primero los ejercicios del laboratorio. Compara el razonamiento y las condiciones, además del resultado.
 
-## Criterio para avanzar
+## 1. Secuencia desde alerta apagada
 
-Alerta activa≥30°C y libera≤28°C. Valores fuera de rango dan diagnóstico distinto, nunca temperatura 0 inventada.
+29 produce OFF; 30 activa ON; volver a 29 conserva ON; 28 libera OFF. Sin recordar el estado, 29 no podría tener dos respuestas distintas según el recorrido.
 
-El resultado esperado debe compararse con tu evidencia. Una solución escrita no sustituye la observación del montaje; las pruebas de escritorio validan reglas de software y los resultados eléctricos requieren placa/componentes.
+## 2. Alcance de simulación
 
-## Entrega mínima
+Una entrada controlada comprueba fronteras e histéresis. No demuestra precisión de TMP36, alimentación ni ADC. La prueba física aporta evidencia distinta.
 
-Incluye montaje y referencias, versión de core/bibliotecas, cambio exacto, entrada, esperado, observado y explicación. Para señales periódicas mide al menos varios eventos; para sensores indica fuente, unidad y condiciones de medición. Si utilizaste un pulsador para representar un sensor, decláralo.
+## 3. Mostrar fallo en LCD
 
-## Límite que debes explicar
+Usa un texto explícito como DATO INVALIDO y evita presentar un número anterior como actual. Revisa el mapa de pines antes de integrar. El proyecto base todavía utiliza Serial y LED, no un LCD instalado.
 
-Base ejecutable de monitoreo; gráficos, CSV y humedad se incorporan solo cuando se implementan.
+## Caso adicional
+
+Después de una muestra inválida la referencia pone alerta=false y LED HIGH por diagnóstico. Si llega después una muestra válida de 29, la alerta permanece apagada y el LED se apaga. El estado posterior al fallo es una política implementada, no la conservación automática del estado de alerta anterior.
+
+## Evidencia de tu práctica
+
+Conserva predicción, cambio exacto y resultado observado en [EVIDENCIAS.md](../docs/EVIDENCIAS.md). Distingue cálculo, prueba de software y montaje físico. Una respuesta correcta en papel no sustituye una comprobación eléctrica.

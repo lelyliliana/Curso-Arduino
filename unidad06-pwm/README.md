@@ -1,5 +1,7 @@
 # Unidad 06 — PWM: brillo y control proporcional
 
+**[Desarrollo paso a paso: Del ADC al tiempo encendido de un LED](DESARROLLO.md)**. Sigue el recorrido del código, las tablas y los experimentos antes de resolver la práctica.
+
 [Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/arduino/)
 
 ## Qué aprenderás
